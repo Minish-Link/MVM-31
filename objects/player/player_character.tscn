@@ -1,3 +1,22 @@
 [gd_scene format=3 uid="uid://b5k6yq7y35n1p"]
 
+[ext_resource type="Script" uid="uid://c4rrtv3tnbxo6" path="res://objects/player/player_movement.gd" id="1_wrsal"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ski25"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ski25"]
+
 [node name="PlayerCharacter" type="Node3D" unique_id=999144016]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=581616715]
+axis_lock_linear_z = true
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+axis_lock_angular_z = true
+script = ExtResource("1_wrsal")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=588400986]
+shape = SubResource("CapsuleShape3D_ski25")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D" unique_id=327672567]
+mesh = SubResource("CapsuleMesh_ski25")

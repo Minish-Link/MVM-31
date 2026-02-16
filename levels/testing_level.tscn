@@ -1,3 +1,26 @@
 [gd_scene format=3 uid="uid://gq4qjmc2vc8a"]
 
+[ext_resource type="PackedScene" uid="uid://b5k6yq7y35n1p" path="res://objects/player/player_character.tscn" id="1_m2onx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8yewn"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_omjae"]
+
 [node name="TestingLevel" type="Node3D" unique_id=200580513]
+
+[node name="Platform" type="StaticBody3D" parent="." unique_id=564383326]
+transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform" unique_id=1636122632]
+shape = SubResource("BoxShape3D_8yewn")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Platform" unique_id=2142491060]
+mesh = SubResource("BoxMesh_omjae")
+
+[node name="PlayerCharacter" parent="." unique_id=999144016 instance=ExtResource("1_m2onx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8397671, 0)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1555750136]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4928709, 5.038422)
+projection = 1
+size = 10.0
