@@ -2,25 +2,56 @@
 
 [ext_resource type="PackedScene" uid="uid://b5k6yq7y35n1p" path="res://objects/player/player_character.tscn" id="1_m2onx"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_8yewn"]
-
 [sub_resource type="BoxMesh" id="BoxMesh_omjae"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_m2onx"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="Environment" id="Environment_m2onx"]
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+reflected_light_source = 2
 
 [node name="TestingLevel" type="Node3D" unique_id=200580513]
 
 [node name="Platform" type="StaticBody3D" parent="." unique_id=564383326]
 transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform" unique_id=1636122632]
-shape = SubResource("BoxShape3D_8yewn")
-
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Platform" unique_id=2142491060]
 mesh = SubResource("BoxMesh_omjae")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform" unique_id=1682878016]
+shape = SubResource("ConcavePolygonShape3D_m2onx")
+
+[node name="Platform3" type="StaticBody3D" parent="." unique_id=1786579001]
+transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Platform3" unique_id=1373020274]
+mesh = SubResource("BoxMesh_omjae")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform3" unique_id=1493665202]
+shape = SubResource("ConcavePolygonShape3D_m2onx")
+
+[node name="Platform2" type="StaticBody3D" parent="." unique_id=1338497082]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 1, -4, 4, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Platform2" unique_id=428714298]
+mesh = SubResource("BoxMesh_omjae")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform2" unique_id=2085824519]
+shape = SubResource("ConcavePolygonShape3D_m2onx")
+
+[node name="Platform4" type="StaticBody3D" parent="." unique_id=359143149]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 1, -9, 4, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Platform4" unique_id=1318996608]
+mesh = SubResource("BoxMesh_omjae")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform4" unique_id=999952754]
+shape = SubResource("ConcavePolygonShape3D_m2onx")
 
 [node name="PlayerCharacter" parent="." unique_id=999144016 instance=ExtResource("1_m2onx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8397671, 0)
 
-[node name="Camera3D" type="Camera3D" parent="." unique_id=1555750136]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4928709, 5.038422)
-projection = 1
-size = 10.0
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1844493325]
+environment = SubResource("Environment_m2onx")
