@@ -15,6 +15,11 @@ run/main_scene="uid://gq4qjmc2vc8a"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+WorldData="*uid://7nixy2ur6k8i"
+PlayerCharacter="*uid://b5k6yq7y35n1p"
+
 [dotnet]
 
 project/assembly_name="MVM-31"

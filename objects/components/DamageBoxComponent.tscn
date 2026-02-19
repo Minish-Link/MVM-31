@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dptjs67q64i8i"]
+
+[ext_resource type="Script" uid="uid://b580o80c7o8hl" path="res://objects/components/damage_box_component.gd" id="1_iaaka"]
+
+[node name="DamageBoxComponent" type="Area3D" unique_id=987569012]
+script = ExtResource("1_iaaka")
+
+[connection signal="area_entered" from="." to="." method="_on_hitbox_entered"]

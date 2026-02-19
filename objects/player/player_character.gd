@@ -1,4 +1,5 @@
 extends CharacterBody3D
+class_name Player
 
 @export_category("Basic Movement")
 @export var WALK_SPEED := 5.0
@@ -71,13 +72,14 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 func _input(event: InputEvent):
-	if event.is_action_pressed("slide") and velocity.x != 0 and is_on_floor():# and not is_sliding:
+	if event.is_action_pressed("slide") and is_on_floor():
 		if not is_sliding:
 			slide_dir = Input.get_axis("move_left", "move_right")
-			is_sliding = true
-			slide_countdown = SLIDE_TIME
-			current_walk_speed = SLIDE_SPEED
-			_squish()
+			if slide_dir != 0:
+				is_sliding = true
+				slide_countdown = SLIDE_TIME
+				current_walk_speed = SLIDE_SPEED
+				_squish()
 		else:
 			stop_sliding = false
 	elif event.is_action_released("slide"):

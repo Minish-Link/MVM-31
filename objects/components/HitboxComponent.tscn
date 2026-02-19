@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://davjvuhbb2fib"]
+
+[ext_resource type="Script" uid="uid://nglgfox7gtq7" path="res://objects/components/hitbox_component.gd" id="1_klej4"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_gftts"]
+
+[node name="HitboxComponent" type="Area3D" unique_id=1077715365]
+script = ExtResource("1_klej4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2052834604]
+shape = SubResource("CapsuleShape3D_gftts")
