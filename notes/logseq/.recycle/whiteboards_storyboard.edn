@@ -1,0 +1,64 @@
+{:blocks (
+{:block/content "Intro"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "69982602-7265-4194-9036-a679a4c9141a"}
+:block/parent 
+{:block/uuid #uuid "69982602-7265-4194-9036-a679a4c9141a"}
+:block/properties 
+{}
+:block/uuid #uuid "699837ef-6ebd-496b-b2ef-0af52f557dff"} 
+{:block/created-at 1771583485122
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 0
+:scale [1 1]
+:pageId "699837ef-6ebd-496b-b2ef-0af52f557dff"
+:scaleLevel "md"
+:fill ""
+:compact false
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 141.59999969383713]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "464b1a70-0e47-11f1-bf6f-0969b4ba246a"
+:noFill false
+:point [104 328]
+:parentId "69982602-7265-4194-9036-a679a4c9141a"
+:collapsedHeight 0
+:nonce 1771583471062}}
+:block/updated-at 1771583485122} 
+{:block/content "Main character \"wakes up\" after being"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "699837ef-6ebd-496b-b2ef-0af52f557dff"}
+:block/parent 
+{:block/uuid #uuid "699837ef-6ebd-496b-b2ef-0af52f557dff"}
+:block/properties 
+{}
+:block/uuid #uuid "699837fd-1845-4a27-b877-4af54734bcfc"})
+:pages (
+{:block/uuid #uuid "69982602-7265-4194-9036-a679a4c9141a"
+:block/properties 
+{:ls-type :whiteboard-page
+:logseq.tldraw.page 
+{:id "69982602-7265-4194-9036-a679a4c9141a"
+:name "storyboard"
+:bindings 
+{}
+:nonce 1
+:assets []
+:shapes-index ("464b1a70-0e47-11f1-bf6f-0969b4ba246a")}}
+:block/journal? false
+:block/updated-at 1771583504244
+:block/created-at 1771578882459
+:block/type "whiteboard"
+:block/name "storyboard"
+:block/original-name "storyboard"})}

@@ -1,0 +1,2 @@
+- Suggestion by Ety:
+	- So what I'm thinking is basically a Celeste Style dash. We could make it omni-directional, but I suspect the 8 directions lock makes crafting precise platforming sections more straightforward.

@@ -1,0 +1,8 @@
+- Track Drafts
+	- [[A Bittersweet Beginning]]
+	- [[Battle Theme]]
+	- [[Initial Thoughts]]
+	- [[Introspect Mechanism]]
+	- [[Misunderstood Shopkeeper]]
+	- [[Penultimate]]
+	- [[Romance Theme]]

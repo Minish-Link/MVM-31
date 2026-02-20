@@ -1,0 +1,8 @@
+- This is an idea I -- Ety -- have dreamed of for a while and I would love to try to implement it for this project if we have the time. That being said, I'm more than willing to handle the brunt of its development and implementation on my own for this project since it mostly just asks for other pieces of code to follow a little convention.
+- What is it?
+	- Settings Select would be a mode that the player can enter which would freeze the game world, pausing all physics interactions, and provide a cursor that most objects could be selected with. This would then open the settings menu specifically opened to the settings that are relevant to that entity type.
+	- An example:
+		- You are playing and encounter a new interactable, but the sound effect that plays when you interact with it is -- to your ear -- not super pleasant. As a result, the volume of *this* effect is a little higher than where you want it to be, but you typically can't turn it down without turning all the other effects down too.
+		- With Settings Select you could select that interactable, open the settings menu for *their* specific sound settings, and adjust them, which would then automatically propagate to every other instance of that interactable.
+- How do we build it?
+	- Basically the way this system would work is just by putting a wrapper on the relevant constants for each interactable, enemy, thing that produces noise -- entity if you will. This wrapper would make it so that the Settings Select system can essentially yoink and manipulate the relevant constants -- and because they are stored on the prototype of each given entity which then references the single instance of them, a mutable change to them can be automatically picked up by all instances via signals

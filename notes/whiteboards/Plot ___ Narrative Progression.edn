@@ -1,0 +1,699 @@
+{:blocks (
+{:block/content "Intro"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "6998387e-6205-4d46-8eec-6b34faff3a94"}
+:block/parent 
+{:block/uuid #uuid "6998387e-6205-4d46-8eec-6b34faff3a94"}
+:block/properties 
+{}
+:block/uuid #uuid "699838cf-1e22-4071-9cc2-3814e2044105"} 
+{:block/created-at 1771586183117
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 0
+:scale [1 1]
+:pageId "699838cf-1e22-4071-9cc2-3814e2044105"
+:scaleLevel "md"
+:fill ""
+:compact false
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 722.3998458944872]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "cbaebf50-0e47-11f1-8dfd-af64ff5ece5c"
+:noFill false
+:point [16 -152]
+:parentId "6998387e-6205-4d46-8eec-6b34faff3a94"
+:collapsedHeight 0
+:nonce 1771583695360}}
+:block/updated-at 1771586183117} 
+{:block/content "The Main Character \"awakens\" and somehow becomes aware that the Polycule has been kidnapped."
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "699838cf-1e22-4071-9cc2-3814e2044105"}
+:block/parent 
+{:block/uuid #uuid "699838cf-1e22-4071-9cc2-3814e2044105"}
+:block/properties 
+{}
+:block/uuid #uuid "699838d6-e32a-46fe-b8fd-b05a0ebc206f"} 
+{:block/content "First AI"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "699838cf-1e22-4071-9cc2-3814e2044105"}
+:block/parent 
+{:block/uuid #uuid "6998387e-6205-4d46-8eec-6b34faff3a94"}
+:block/properties 
+{}
+:block/uuid #uuid "69983d71-d1a5-4398-a95d-85c587137e27"} 
+{:block/created-at 1771586025092
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 1
+:scale [1 1]
+:pageId "69983d71-d1a5-4398-a95d-85c587137e27"
+:scaleLevel "md"
+:fill ""
+:compact false
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 597.6000447049141]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "8ee028e0-0e4a-11f1-a509-57146348b39b"
+:noFill false
+:point [768 -136]
+:parentId "6998387e-6205-4d46-8eec-6b34faff3a94"
+:collapsedHeight 0
+:nonce 1771584882276}}
+:block/updated-at 1771586025092} 
+{:block/content "The player goes about rescuing / collecting the first AI / ability and clearing the \"Mainline\" of the first Region"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "69983d71-d1a5-4398-a95d-85c587137e27"}
+:block/parent 
+{:block/uuid #uuid "69983d71-d1a5-4398-a95d-85c587137e27"}
+:block/properties 
+{}
+:block/uuid #uuid "69983d78-f83e-4e0b-bfe9-d78d9296499a"} 
+{:block/created-at 1771586196199
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke ""
+:index 2
+:scale [1 1]
+:scaleLevel "md"
+:fill ""
+:type "line"
+:strokeType "line"
+:strokeWidth 1
+:opacity 1
+:label ""
+:id "97b11652-0e4a-11f1-a509-57146348b39b"
+:fontWeight 400
+:noFill true
+:point [417 201.91]
+:fontSize 20
+:handles 
+{:start 
+{:id "start"
+:canBind true
+:point [0 4.61]
+:bindingId "97b11650-0e4a-11f1-a509-57146348b39b"}
+:end 
+{:id "end"
+:canBind true
+:point [347 0]
+:bindingId "9e494a71-0e4d-11f1-a674-d9ce95e7d530"}}
+:decorations 
+{:end "arrow"}
+:parentId "6998387e-6205-4d46-8eec-6b34faff3a94"
+:nonce 1771584896615
+:italic false}}
+:block/updated-at 1771586196199} 
+{:block/content "Important Questions:"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "699838d6-e32a-46fe-b8fd-b05a0ebc206f"}
+:block/parent 
+{:block/uuid #uuid "699838cf-1e22-4071-9cc2-3814e2044105"}
+:block/properties 
+{}
+:block/uuid #uuid "69983ef0-dde6-45bc-95c7-aaecccbc86e8"} 
+{:block/content "What causes the main character to wake up?"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "69983ef0-dde6-45bc-95c7-aaecccbc86e8"}
+:block/parent 
+{:block/uuid #uuid "69983ef0-dde6-45bc-95c7-aaecccbc86e8"}
+:block/properties 
+{}
+:block/uuid #uuid "69983f0f-3d5f-4d43-a2d0-3a03caecfd14"} 
+{:block/content "Suggestion by Ety: My thinking on this is that the AI that inhabits the Head is somehow able to break confinement long enough to put out a distress message to trigger Recovery Mode and instruct them to recover the other AIs as well as where to find the first one ( or maybe where to search for them. )"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "69983f0f-3d5f-4d43-a2d0-3a03caecfd14"}
+:block/parent 
+{:block/uuid #uuid "69983f0f-3d5f-4d43-a2d0-3a03caecfd14"}
+:block/properties 
+{}
+:block/uuid #uuid "69983f26-f960-4000-93c5-3c0d9922aec3"} 
+{:block/content "Who has kidnapped the Polycule?"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "69983f4d-0f9f-4b5e-a970-84fb0df595ac"}
+:block/parent 
+{:block/uuid #uuid "69983ef0-dde6-45bc-95c7-aaecccbc86e8"}
+:block/properties 
+{}
+:block/uuid #uuid "69983f28-6e27-41ab-99ea-d4dc353f8b9c"} 
+{:block/content "What state is the main character in upon waking up?"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "69983f0f-3d5f-4d43-a2d0-3a03caecfd14"}
+:block/parent 
+{:block/uuid #uuid "69983ef0-dde6-45bc-95c7-aaecccbc86e8"}
+:block/properties 
+{}
+:block/uuid #uuid "69983f4d-0f9f-4b5e-a970-84fb0df595ac"} 
+{:block/content "Suggestion by Ety: This could be normal or they could be in like a damaged state that has to first be fixed."
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "69983f4d-0f9f-4b5e-a970-84fb0df595ac"}
+:block/parent 
+{:block/uuid #uuid "69983f4d-0f9f-4b5e-a970-84fb0df595ac"}
+:block/properties 
+{}
+:block/uuid #uuid "69983f58-d05c-4dda-8e32-43821399ce83"} 
+{:block/content "Second AI A"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "6998410b-1593-4f30-b959-3c5012ee8d6b"}
+:block/parent 
+{:block/uuid #uuid "6998387e-6205-4d46-8eec-6b34faff3a94"}
+:block/properties 
+{}
+:block/uuid #uuid "69984100-09c4-455c-bef9-e7e6b72edfda"} 
+{:block/created-at 1771586034703
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 3
+:scale [1 1]
+:pageId "69984100-09c4-455c-bef9-e7e6b72edfda"
+:scaleLevel "md"
+:fill ""
+:compact false
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 112.79997975986801]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "ad672f00-0e4c-11f1-a509-57146348b39b"
+:noFill false
+:point [1456 -168]
+:parentId "6998387e-6205-4d46-8eec-6b34faff3a94"
+:collapsedHeight 0
+:nonce 1771585791546}}
+:block/updated-at 1771586034703} 
+{:block/content ""
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "6998410f-4f5d-48b7-be31-c69094600ab1"}
+:block/parent 
+{:block/uuid #uuid "6998387e-6205-4d46-8eec-6b34faff3a94"}
+:block/properties 
+{}
+:block/uuid #uuid "6998410b-1593-4f30-b959-3c5012ee8d6b"} 
+{:block/content ""
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "69984113-8b12-4544-8e12-c011520ae0e8"}
+:block/parent 
+{:block/uuid #uuid "6998387e-6205-4d46-8eec-6b34faff3a94"}
+:block/properties 
+{}
+:block/uuid #uuid "6998410f-4f5d-48b7-be31-c69094600ab1"} 
+{:block/content "Important Questions:"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "69984119-a71d-45c7-a9b7-3f93d70dae4c"}
+:block/parent 
+{:block/uuid #uuid "6998387e-6205-4d46-8eec-6b34faff3a94"}
+:block/properties 
+{}
+:block/uuid #uuid "69984113-8b12-4544-8e12-c011520ae0e8"} 
+{:block/content "id:: 69984119-a71d-45c7-a9b7-3f93d70dae4c"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "69984143-67ac-44d5-b064-3923d4c6718a"}
+:block/parent 
+{:block/uuid #uuid "6998387e-6205-4d46-8eec-6b34faff3a94"}
+:block/properties 
+{:id "69984119-a71d-45c7-a9b7-3f93d70dae4c"}
+:block/uuid #uuid "69984119-a71d-45c7-a9b7-3f93d70dae4c"} 
+{:block/content ""
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "69983d71-d1a5-4398-a95d-85c587137e27"}
+:block/parent 
+{:block/uuid #uuid "6998387e-6205-4d46-8eec-6b34faff3a94"}
+:block/properties 
+{}
+:block/uuid #uuid "69984143-67ac-44d5-b064-3923d4c6718a"} 
+{:block/content "Important Questions:"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "69983d78-f83e-4e0b-bfe9-d78d9296499a"}
+:block/parent 
+{:block/uuid #uuid "69983d71-d1a5-4398-a95d-85c587137e27"}
+:block/properties 
+{}
+:block/uuid #uuid "6998414c-06b7-4c4d-a52e-a20dc02c90b9"} 
+{:block/content "What is the first region like?"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "6998414c-06b7-4c4d-a52e-a20dc02c90b9"}
+:block/parent 
+{:block/uuid #uuid "6998414c-06b7-4c4d-a52e-a20dc02c90b9"}
+:block/properties 
+{}
+:block/uuid #uuid "6998415f-3139-4b8b-a7ea-a2b8b12ed01e"} 
+{:block/content "Who is the first AI?"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "6998415f-3139-4b8b-a7ea-a2b8b12ed01e"}
+:block/parent 
+{:block/uuid #uuid "6998414c-06b7-4c4d-a52e-a20dc02c90b9"}
+:block/properties 
+{}
+:block/uuid #uuid "6998416f-bc58-4171-bb7b-1686eeabd080"} 
+{:block/content "Suggestion by Ety:"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "6998416f-bc58-4171-bb7b-1686eeabd080"}
+:block/parent 
+{:block/uuid #uuid "6998416f-bc58-4171-bb7b-1686eeabd080"}
+:block/properties 
+{}
+:block/uuid #uuid "6998417c-e17c-43b3-bb29-0fc3af13e91d"} 
+{:block/content "I think it makes the most sense for Legs AI to be the first recovered, since it is likeliest to be the *biggest* upgrade in terms of movement and access. Related to this, I think the next two abilities could be the Left and Right Arms and you can do them in either order"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "6998417c-e17c-43b3-bb29-0fc3af13e91d"}
+:block/parent 
+{:block/uuid #uuid "6998417c-e17c-43b3-bb29-0fc3af13e91d"}
+:block/properties 
+{}
+:block/uuid #uuid "69984181-953c-4000-94f7-c11393388e9e"} 
+{:block/content "Second AI B"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "69984100-09c4-455c-bef9-e7e6b72edfda"}
+:block/parent 
+{:block/uuid #uuid "6998387e-6205-4d46-8eec-6b34faff3a94"}
+:block/properties 
+{}
+:block/uuid #uuid "699841fb-9379-4070-a902-c21c4d3b302c"} 
+{:block/created-at 1771586066192
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 4
+:scale [1 1]
+:pageId "699841fb-9379-4070-a902-c21c4d3b302c"
+:scaleLevel "md"
+:fill ""
+:compact false
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 112.80001238512403]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "43022240-0e4d-11f1-a674-d9ce95e7d530"
+:noFill false
+:point [1464 328]
+:parentId "6998387e-6205-4d46-8eec-6b34faff3a94"
+:collapsedHeight 0
+:nonce 1771586042689}}
+:block/updated-at 1771586066192} 
+{:block/created-at 1771586059185
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke ""
+:index 5
+:scale [1 1]
+:scaleLevel "md"
+:fill ""
+:type "line"
+:strokeType "line"
+:strokeWidth 1
+:opacity 1
+:label ""
+:id "4af24ca2-0e4d-11f1-a674-d9ce95e7d530"
+:fontWeight 400
+:noFill true
+:point [1169 -101.38]
+:fontSize 20
+:handles 
+{:start 
+{:id "start"
+:canBind true
+:point [0 154.47]
+:bindingId "4af24ca0-0e4d-11f1-a674-d9ce95e7d530"}
+:end 
+{:id "end"
+:canBind true
+:point [283 0]
+:bindingId "4af24ca1-0e4d-11f1-a674-d9ce95e7d530"}}
+:decorations 
+{:end "arrow"}
+:parentId "6998387e-6205-4d46-8eec-6b34faff3a94"
+:nonce 1771586055930
+:italic false}}
+:block/updated-at 1771586059185} 
+{:block/created-at 1771586125697
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke ""
+:index 6
+:scale [1 1]
+:scaleLevel "md"
+:fill ""
+:type "line"
+:strokeType "line"
+:strokeWidth 1
+:opacity 1
+:label ""
+:id "4ca9c0a2-0e4d-11f1-a674-d9ce95e7d530"
+:fontWeight 400
+:noFill true
+:point [1169 253.38]
+:fontSize 20
+:handles 
+{:start 
+{:id "start"
+:canBind true
+:point [0 0]
+:bindingId "4ca9c0a0-0e4d-11f1-a674-d9ce95e7d530"}
+:end 
+{:id "end"
+:canBind true
+:point [288 129.78]
+:bindingId nil}}
+:decorations 
+{:end "arrow"}
+:parentId "6998387e-6205-4d46-8eec-6b34faff3a94"
+:nonce 1771586058765
+:italic false}}
+:block/updated-at 1771586125697} 
+{:block/created-at 1771586066192
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke ""
+:index 7
+:scale [1 1]
+:scaleLevel "md"
+:fill ""
+:type "line"
+:strokeType "line"
+:strokeWidth 1
+:opacity 1
+:label ""
+:id "4e069182-0e4d-11f1-a674-d9ce95e7d530"
+:fontWeight 400
+:noFill true
+:point [1655.87 -51.2]
+:fontSize 20
+:handles 
+{:start 
+{:id "start"
+:canBind true
+:point [0.11 0]
+:bindingId "4e069180-0e4d-11f1-a674-d9ce95e7d530"}
+:end 
+{:id "end"
+:canBind true
+:point [0 375.2]
+:bindingId "4e069181-0e4d-11f1-a674-d9ce95e7d530"}}
+:decorations 
+{:start "arrow"
+:end "arrow"}
+:parentId "6998387e-6205-4d46-8eec-6b34faff3a94"
+:nonce 1771586061132
+:italic false}}
+:block/updated-at 1771586066192} 
+{:block/content "Final AI"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "699841fb-9379-4070-a902-c21c4d3b302c"}
+:block/parent 
+{:block/uuid #uuid "6998387e-6205-4d46-8eec-6b34faff3a94"}
+:block/properties 
+{}
+:block/uuid #uuid "69984250-4f85-4043-bd6d-402abf30948e"} 
+{:block/created-at 1771586128435
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 8
+:scale [1 1]
+:pageId "69984250-4f85-4043-bd6d-402abf30948e"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 40.80005715745028]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "75de2740-0e4d-11f1-a674-d9ce95e7d530"
+:noFill false
+:point [2336 128]
+:parentId "6998387e-6205-4d46-8eec-6b34faff3a94"
+:collapsedHeight 0
+:nonce 1771586127798}}
+:block/updated-at 1771586128435} 
+{:block/created-at 1771586143955
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke ""
+:index 9
+:scale [1 1]
+:scaleLevel "md"
+:fill ""
+:type "line"
+:strokeType "line"
+:strokeWidth 1
+:opacity 1
+:label ""
+:id "7d2dcbe2-0e4d-11f1-a674-d9ce95e7d530"
+:fontWeight 400
+:noFill true
+:point [1833.04 157.57]
+:fontSize 20
+:handles 
+{:start 
+{:id "start"
+:canBind true
+:point [0 169.43]
+:bindingId "7d2dcbe0-0e4d-11f1-a674-d9ce95e7d530"}
+:end 
+{:id "end"
+:canBind true
+:point [498.96 0]
+:bindingId "7d2dcbe1-0e4d-11f1-a674-d9ce95e7d530"}}
+:decorations 
+{:end "arrow"}
+:parentId "6998387e-6205-4d46-8eec-6b34faff3a94"
+:nonce 1771586140164
+:italic false}}
+:block/updated-at 1771586143955} 
+{:block/created-at 1771586176583
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke ""
+:index 10
+:scale [1 1]
+:scaleLevel "md"
+:fill ""
+:type "line"
+:strokeType "line"
+:strokeWidth 1
+:opacity 1
+:label ""
+:id "7ef43402-0e4d-11f1-a674-d9ce95e7d530"
+:fontWeight 400
+:noFill true
+:point [1810.26 -54.2]
+:fontSize 20
+:handles 
+{:start 
+{:id "start"
+:canBind true
+:point [0 0]
+:bindingId "7ef43400-0e4d-11f1-a674-d9ce95e7d530"}
+:end 
+{:id "end"
+:canBind true
+:point [521.74 194.14]
+:bindingId "7ef43401-0e4d-11f1-a674-d9ce95e7d530"}}
+:decorations 
+{:end "arrow"}
+:parentId "6998387e-6205-4d46-8eec-6b34faff3a94"
+:nonce 1771586143156
+:italic false}}
+:block/updated-at 1771586176583})
+:pages (
+{:block/uuid #uuid "6998387e-6205-4d46-8eec-6b34faff3a94"
+:block/properties 
+{:ls-type :whiteboard-page
+:logseq.tldraw.page 
+{:id "6998387e-6205-4d46-8eec-6b34faff3a94"
+:name "plot / narrative progression"
+:bindings 
+{:97b11651-0e4a-11f1-a509-57146348b39b 
+{:id "97b11651-0e4a-11f1-a509-57146348b39b"
+:type "line"
+:fromId "97b11652-0e4a-11f1-a509-57146348b39b"
+:toId "8ee028e0-0e4a-11f1-a509-57146348b39b"
+:handleId "end"
+:point [0.49 0.23]
+:distance 4}
+:9e494a71-0e4d-11f1-a674-d9ce95e7d530 
+{:id "9e494a71-0e4d-11f1-a674-d9ce95e7d530"
+:type "line"
+:fromId "97b11652-0e4a-11f1-a509-57146348b39b"
+:toId "8ee028e0-0e4a-11f1-a509-57146348b39b"
+:handleId "end"
+:point [0.51 0.56]
+:distance 4}
+:7d2dcbe1-0e4d-11f1-a674-d9ce95e7d530 
+{:id "7d2dcbe1-0e4d-11f1-a674-d9ce95e7d530"
+:type "line"
+:fromId "7d2dcbe2-0e4d-11f1-a674-d9ce95e7d530"
+:toId "75de2740-0e4d-11f1-a674-d9ce95e7d530"
+:handleId "end"
+:point [0.2 0.12]
+:distance 4}
+:4e069180-0e4d-11f1-a674-d9ce95e7d530 
+{:id "4e069180-0e4d-11f1-a674-d9ce95e7d530"
+:type "line"
+:fromId "4e069182-0e4d-11f1-a674-d9ce95e7d530"
+:toId "ad672f00-0e4c-11f1-a509-57146348b39b"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:7ef43401-0e4d-11f1-a674-d9ce95e7d530 
+{:id "7ef43401-0e4d-11f1-a674-d9ce95e7d530"
+:type "line"
+:fromId "7ef43402-0e4d-11f1-a674-d9ce95e7d530"
+:toId "75de2740-0e4d-11f1-a674-d9ce95e7d530"
+:handleId "end"
+:point [0.12 0.7]
+:distance 4}
+:4af24ca0-0e4d-11f1-a674-d9ce95e7d530 
+{:id "4af24ca0-0e4d-11f1-a674-d9ce95e7d530"
+:type "line"
+:fromId "4af24ca2-0e4d-11f1-a674-d9ce95e7d530"
+:toId "8ee028e0-0e4a-11f1-a509-57146348b39b"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:4af24ca1-0e4d-11f1-a674-d9ce95e7d530 
+{:id "4af24ca1-0e4d-11f1-a674-d9ce95e7d530"
+:type "line"
+:fromId "4af24ca2-0e4d-11f1-a674-d9ce95e7d530"
+:toId "ad672f00-0e4c-11f1-a509-57146348b39b"
+:handleId "end"
+:point [0.29 0.05]
+:distance 4}
+:7ef43400-0e4d-11f1-a674-d9ce95e7d530 
+{:id "7ef43400-0e4d-11f1-a674-d9ce95e7d530"
+:type "line"
+:fromId "7ef43402-0e4d-11f1-a674-d9ce95e7d530"
+:toId "ad672f00-0e4c-11f1-a509-57146348b39b"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:4e069181-0e4d-11f1-a674-d9ce95e7d530 
+{:id "4e069181-0e4d-11f1-a674-d9ce95e7d530"
+:type "line"
+:fromId "4e069182-0e4d-11f1-a674-d9ce95e7d530"
+:toId "43022240-0e4d-11f1-a674-d9ce95e7d530"
+:handleId "end"
+:point [0.48 0.68]
+:distance 4}
+:4ca9c0a1-0e4d-11f1-a674-d9ce95e7d530 
+{:id "4ca9c0a1-0e4d-11f1-a674-d9ce95e7d530"
+:type "line"
+:fromId "4ca9c0a2-0e4d-11f1-a674-d9ce95e7d530"
+:toId "43022240-0e4d-11f1-a674-d9ce95e7d530"
+:handleId "end"
+:point [0.6 0.74]
+:distance 4}
+:97b11650-0e4a-11f1-a509-57146348b39b 
+{:id "97b11650-0e4a-11f1-a509-57146348b39b"
+:type "line"
+:fromId "97b11652-0e4a-11f1-a509-57146348b39b"
+:toId "cbaebf50-0e47-11f1-8dfd-af64ff5ece5c"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:4ca9c0a0-0e4d-11f1-a674-d9ce95e7d530 
+{:id "4ca9c0a0-0e4d-11f1-a674-d9ce95e7d530"
+:type "line"
+:fromId "4ca9c0a2-0e4d-11f1-a674-d9ce95e7d530"
+:toId "8ee028e0-0e4a-11f1-a509-57146348b39b"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:d2506951-0e4a-11f1-a509-57146348b39b 
+{:id "d2506951-0e4a-11f1-a509-57146348b39b"
+:type "line"
+:fromId "97b11652-0e4a-11f1-a509-57146348b39b"
+:toId "8ee028e0-0e4a-11f1-a509-57146348b39b"
+:handleId "end"
+:point [0.51 0.62]
+:distance 4}
+:da27db91-0e4a-11f1-a509-57146348b39b 
+{:id "da27db91-0e4a-11f1-a509-57146348b39b"
+:type "line"
+:fromId "97b11652-0e4a-11f1-a509-57146348b39b"
+:toId "8ee028e0-0e4a-11f1-a509-57146348b39b"
+:handleId "end"
+:point [0.51 0.59]
+:distance 4}
+:7d2dcbe0-0e4d-11f1-a674-d9ce95e7d530 
+{:id "7d2dcbe0-0e4d-11f1-a674-d9ce95e7d530"
+:type "line"
+:fromId "7d2dcbe2-0e4d-11f1-a674-d9ce95e7d530"
+:toId "43022240-0e4d-11f1-a674-d9ce95e7d530"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}}
+:nonce 1
+:assets []
+:shapes-index ("cbaebf50-0e47-11f1-8dfd-af64ff5ece5c" "8ee028e0-0e4a-11f1-a509-57146348b39b" "97b11652-0e4a-11f1-a509-57146348b39b" "ad672f00-0e4c-11f1-a509-57146348b39b" "43022240-0e4d-11f1-a674-d9ce95e7d530" "4af24ca2-0e4d-11f1-a674-d9ce95e7d530" "4ca9c0a2-0e4d-11f1-a674-d9ce95e7d530" "4e069182-0e4d-11f1-a674-d9ce95e7d530" "75de2740-0e4d-11f1-a674-d9ce95e7d530" "7d2dcbe2-0e4d-11f1-a674-d9ce95e7d530" "7ef43402-0e4d-11f1-a674-d9ce95e7d530")}}
+:block/journal? false
+:block/namespace 
+{:db/id 215}
+:block/updated-at 1771586207087
+:block/created-at 1771583614827
+:block/type "whiteboard"
+:block/name "plot / narrative progression"
+:block/original-name "plot / narrative progression"})}

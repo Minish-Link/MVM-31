@@ -1,0 +1,7 @@
+- Name:
+	- Temporary Name: "Recovery Mode"
+		- Ety: I'm thinking this could be there *actual* name but they are called some diminutive form of it like "Reco" or "Reckie" for example
+- Appearance:
+	- They are physically represented as the Robot and are never separate from the Robot and so don't actually need an alternative physical representation
+		- Ety: Even with this being the case, my thinking is that it might make the most sense for each AI to have a Portrait that we can display during dialogue. This would mean we would still need to come up with another visualization of the main character than just the model -- though it need not necessary be meaningfully different, which is just to say that the portrait could be an artistic rendering of a portrait of the model if you could get much closer than the game will typically allow for
+	-

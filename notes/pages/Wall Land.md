@@ -1,0 +1,2 @@
+- Suggestion by Ety [here](https://discord.com/channels/854212355889299457/1464739500482756638/1473096574812033194):
+	- One of the movement ideas that I've had in my head that I thought could be fun in conjuction with some of the pieces already discussed is like "Wall-Landing" -- its like being able to grab and jump off of walls but its automatic, you just "land" on the wall, kinda like its just more floor

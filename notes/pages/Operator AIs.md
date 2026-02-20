@@ -1,0 +1,26 @@
+- Regions of Robot Inhabited
+	- Legs
+		- Both together as a Unit
+	- Arm
+		- Each as two separate individual Units
+	- Torso
+		- Could be subdivided more or could be considered the place that Recovery Mode inhabits
+	- Head
+- The above list would translate to 1 + 4 + n characters for the main cast.
+	- 1 -> The Main Character, e.g. Recovery Mode
+	- 4 -> Legs, Left Arm, Right Arm, Head
+	- n -> If we decide to have the torso inhabited by a different AI(s)
+- Names
+	- Suggestion by Dwarf [here](https://discord.com/channels/854212355889299457/1464739500482756638/1472289308286259324):
+		- If we do go for the previously suggested idea of like, a Polycule that was separated, and finding each Partner is how you gain abilities, then we could also do a cheeky "name each entity a reference to each theme" (not to say that that satisfies them, rather just that it would be funny)
+	- Suggestion by Dwarf [here](https://discord.com/channels/854212355889299457/1464739500482756638/1474214008256200778):
+		- For names of Systems, I kinda like the idea of trying to find names that make sense for where they go- so a name like Shelly for this one (as an example- I'm definitely open to more interesting names)
+- Appearances / Forms:
+	- Suggestion by Dwarf [here](https://discord.com/channels/854212355889299457/1464739500482756638/1474194582932553819):
+		- Obviously the player is the main "unit"; but I could see the partners being either something like nano-bots or purely digital; or being physical forms that are housed in Us
+	- Suggestion by Busca [here](https://discord.com/channels/854212355889299457/1464739500482756638/1474195952805085276):
+		- I like the idea of them being digital and having (simple) forms when they are outside of the main mech, maybe they could be like electric current that take shape or something??
+	- Suggestion by Minnish [here](https://discord.com/channels/854212355889299457/1464739500482756638/1474196336025800977):
+		- I was thinking they could each have their own 'avatars' basically and be represented outside the robot as something like holograms
+	- Suggestion by Ety:
+		- I'm thinking what makes the most sense from a balancing effort and expressiveness is to give each character a Portrait that can be displayed during dialogue. This would then let us either simply *not* physically represent the AIs ( they could just be downloaded from a terminal that you might otherwise already be used to interacting with but its a *special* one, for example) or we only need to come up with one abstract model for their physical appearance and then we can make relatively superficial changes to distinguish them between each AI, e.g. a floating icosahedron whose color was determined by which AI it was and said color would match the theming of their Portrait so it was obvious who was who

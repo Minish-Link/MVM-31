@@ -1,0 +1,183 @@
+{:blocks (
+{:block/content "[Summary of First Brainstorming Session](https://discord.com/channels/854212355889299457/1464739500482756638/1472493716680736907)"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "699833d9-d666-4b9c-a177-34aaaa81d853"}
+:block/parent 
+{:block/uuid #uuid "699833d9-d666-4b9c-a177-34aaaa81d853"}
+:block/properties 
+{}
+:block/uuid #uuid "699833f0-570c-4532-98ed-feff69cbfb0e"} 
+{:block/created-at 1771582713571
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 0
+:scale [1 1]
+:pageId "699833f0-570c-4532-98ed-feff69cbfb0e"
+:scaleLevel "lg"
+:fill ""
+:compact false
+:isAutoResizing true
+:type "logseq-portal"
+:size [600 1436.4000549316406]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "e4769e20-0e44-11f1-bf6f-0969b4ba246a"
+:noFill false
+:point [456 -1080]
+:parentId "699833d9-d666-4b9c-a177-34aaaa81d853"
+:collapsedHeight 0
+:nonce 1771582448489}}
+:block/updated-at 1771582713571} 
+{:block/content ""
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "699833f0-570c-4532-98ed-feff69cbfb0e"}
+:block/parent 
+{:block/uuid #uuid "699833d9-d666-4b9c-a177-34aaaa81d853"}
+:block/uuid #uuid "69983411-7eac-47d3-bf11-31fba2d3d5bf"} 
+{:block/content "The polycule is one big magical girl mech and they all contribute to the abilities of the character,"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "699833f0-570c-4532-98ed-feff69cbfb0e"}
+:block/parent 
+{:block/uuid #uuid "699833f0-570c-4532-98ed-feff69cbfb0e"}
+:block/properties 
+{}
+:block/uuid #uuid "6998342a-e780-419e-bce7-0530e02bdf55"} 
+{:block/content "Roles"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "69983463-9282-43e3-8ffc-5a5c22cc8d9c"}
+:block/parent 
+{:block/uuid #uuid "699833f0-570c-4532-98ed-feff69cbfb0e"}
+:block/properties 
+{}
+:block/uuid #uuid "6998342a-bef8-49b2-aacc-c73b655db5db"} 
+{:block/content "There NEEDS to be that Magical Girl Transformation ™  Animation that is Power Rangers Pilled,"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "6998342a-e780-419e-bce7-0530e02bdf55"}
+:block/parent 
+{:block/uuid #uuid "699833f0-570c-4532-98ed-feff69cbfb0e"}
+:block/properties 
+{}
+:block/uuid #uuid "69983436-6856-4064-8e69-e5a1c5d3b47d"} 
+{:block/content "A very movement-focused on game with combat that compliments the movement, kinda like Sonic or Neon White,"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "69983436-6856-4064-8e69-e5a1c5d3b47d"}
+:block/parent 
+{:block/uuid #uuid "699833f0-570c-4532-98ed-feff69cbfb0e"}
+:block/properties 
+{}
+:block/uuid #uuid "69983439-b575-4a56-80e8-2a3590dd2d01"} 
+{:block/content "World is full of robotty things that often split and combine,\nWe need to design what concretely are the main characters?"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "69983439-b575-4a56-80e8-2a3590dd2d01"}
+:block/parent 
+{:block/uuid #uuid "699833f0-570c-4532-98ed-feff69cbfb0e"}
+:block/properties 
+{}
+:block/uuid #uuid "6998343c-9bb0-4933-99cd-9e0d927a3ad2"} 
+{:block/content "You are a robot polycule and you lost most of your capabilities. You start as the \"recovery mode\" character which only has basic command over each body part, and then as you get back each member and they are capable of using advanced features."
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "6998343c-9bb0-4933-99cd-9e0d927a3ad2"}
+:block/parent 
+{:block/uuid #uuid "699833f0-570c-4532-98ed-feff69cbfb0e"}
+:block/properties 
+{}
+:block/uuid #uuid "6998344d-1209-46ff-8114-af8426b33100"} 
+{:block/content "The full physical design will probably be present in the character model but over time things like indicator lights will glow up as you get more of the magical girls"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "6998344d-1209-46ff-8114-af8426b33100"}
+:block/parent 
+{:block/uuid #uuid "699833f0-570c-4532-98ed-feff69cbfb0e"}
+:block/properties 
+{}
+:block/uuid #uuid "69983463-9282-43e3-8ffc-5a5c22cc8d9c"} 
+{:block/content "Busca: 3D Modeling, Graphics,"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "6998342a-bef8-49b2-aacc-c73b655db5db"}
+:block/parent 
+{:block/uuid #uuid "6998342a-bef8-49b2-aacc-c73b655db5db"}
+:block/properties 
+{}
+:block/uuid #uuid "69983471-c723-4e54-832a-d16f987e6fdc"} 
+{:block/content "Ety: Programming, Music,"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "69983471-c723-4e54-832a-d16f987e6fdc"}
+:block/parent 
+{:block/uuid #uuid "6998342a-bef8-49b2-aacc-c73b655db5db"}
+:block/properties 
+{}
+:block/uuid #uuid "69983474-5590-4223-b6f9-3528cece53d9"} 
+{:block/content "Minish: Programming,"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "69983474-5590-4223-b6f9-3528cece53d9"}
+:block/parent 
+{:block/uuid #uuid "6998342a-bef8-49b2-aacc-c73b655db5db"}
+:block/properties 
+{}
+:block/uuid #uuid "69983476-da27-459c-bc97-5a3f21997850"} 
+{:block/content "Dwarf: Planning and filling in any gaps"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "69983476-da27-459c-bc97-5a3f21997850"}
+:block/parent 
+{:block/uuid #uuid "6998342a-bef8-49b2-aacc-c73b655db5db"}
+:block/properties 
+{}
+:block/uuid #uuid "69983479-d77b-40b2-99e2-1bb9faf9d28c"} 
+{:block/created-at 1771583687292
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:index 1
+:scale [1 1]
+:type "image"
+:assetId "4ee70010-0e45-11f1-bf6f-0969b4ba246a"
+:size [672 826]
+:opacity 1
+:id "4ee7ea70-0e45-11f1-bf6f-0969b4ba246a"
+:isAspectRatioLocked true
+:isLocked false
+:objectFit "fill"
+:point [1680 -1256]
+:parentId "699833d9-d666-4b9c-a177-34aaaa81d853"
+:nonce 1771582626745
+:clipping 0}}
+:block/updated-at 1771583687292})
+:pages (
+{:block/uuid #uuid "699833d9-d666-4b9c-a177-34aaaa81d853"
+:block/properties 
+{:ls-type :whiteboard-page
+:logseq.tldraw.page 
+{:id "699833d9-d666-4b9c-a177-34aaaa81d853"
+:name "general brainstorming"
+:bindings 
+{}
+:nonce 1
+:assets [
+{:id "4ee70010-0e45-11f1-bf6f-0969b4ba246a"
+:type "image"
+:src "../assets/image_1771582626396_0.png"
+:size [1344 1652]}]
+:shapes-index ("e4769e20-0e44-11f1-bf6f-0969b4ba246a" "4ee7ea70-0e45-11f1-bf6f-0969b4ba246a")}}
+:block/updated-at 1771583687292
+:block/created-at 1771582425226
+:block/type "whiteboard"
+:block/name "general brainstorming"
+:block/original-name "General Brainstorming"})}

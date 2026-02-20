@@ -1,0 +1,2 @@
+- ![](../assets/MMG_InitialThoughts_1771580410631_0.mp3)
+-

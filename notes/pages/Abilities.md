@@ -1,0 +1,12 @@
+- Implemented
+	- [[Jump]]
+	- [[Slide]]
+- Partially Implemented
+- Brainstormed
+	- [[Interface]]
+	- [[Homing Pogo]]
+	- [[Hazard Navigation]]
+	- [[Directional Dash]]
+	- [[Wall Land]]
+	- [[Grappling Hook]]
+-

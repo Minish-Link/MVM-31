@@ -1,0 +1,4 @@
+- Suggestion by Ety in first brainstorming session:
+	- Idea was likened to Sonic's lock on attack where being in the air would enable locking on to the nearest enemy and quickly "dashing" in their direction and bouncing off as damage is dealt
+	- This also need not only apply to enemies and using it for platforming hooks was discussed as one of the likely directions for its exploration
+	- I'm thinking this ability could also be justified simply as using the grappling hook on moving targets which is maybe something that the AI is needed to do, but using the grappling hook to connect to stationary objects and go like straight up and down is safe enough for Recovery Mode to do on their own

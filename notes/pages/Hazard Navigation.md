@@ -1,0 +1,2 @@
+- Suggestion by Dwarf [here](https://discord.com/channels/854212355889299457/1464739500482756638/1474213341487562812):
+	- Idea for one of the "Systems": The Body could rust very quickly in certain conditions (such as water), and the Recovery System repair it, but not faster than the rust happens. This System could specifically reconfigure the Body to not rust in those conditions (and maybe provide extra hazard protection overall)

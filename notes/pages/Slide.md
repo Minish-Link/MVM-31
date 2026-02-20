@@ -1,0 +1,5 @@
+- Suggestion by Minnish [here](https://discord.com/channels/854212355889299457/1464739500482756638/1473025016403722424):
+	- had an idea rattling in my brain since we peak-brainstormed: iirc we talked about being able to home in/grapple enemies, and I was thinking, we could have another ability that lets you knock grounded enemies up into the air, so you could use them to gain extra height. I was thinking of something like a Slide move (which could also be used to serve other purposes)
+- Details:
+	- [1](https://discord.com/channels/854212355889299457/1464739500482756638/1474246282741678130): the way I currently have it implemented is that the speed after a slide decays, but only when the player is in the 'walking' state, which means if you jump out of or immediately after a slide, you'll keep the full speed in the air (and can also maintain most of your speed if you keep bunny hopping after you land.)
+	-

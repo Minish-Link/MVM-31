@@ -1,0 +1,3 @@
+- Suggestion by Ety in first brainstorming session:
+	- This is the ability to interact with robotics, machinery, computers, basically most things digitally / electronically. This could be used to do the equivalent of e.g. Pushing Buttons, Pulling Levers, etc. Basically just an interaction mechanic but that could also extend to e.g. manipulating a moving platform, repairing something, etc.
+	- This would be one of the basic abilities that the Robot would have as it would be enabled by Recovery Mode
