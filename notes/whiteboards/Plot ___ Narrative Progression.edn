@@ -8,7 +8,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "699838cf-1e22-4071-9cc2-3814e2044105"} 
-{:block/created-at 1771586183117
+{:block/created-at 1771602873635
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -30,12 +30,12 @@
 :opacity 1
 :id "cbaebf50-0e47-11f1-8dfd-af64ff5ece5c"
 :noFill false
-:point [16 -152]
+:point [256 -160]
 :parentId "6998387e-6205-4d46-8eec-6b34faff3a94"
 :collapsedHeight 0
-:nonce 1771583695360}}
-:block/updated-at 1771586183117} 
-{:block/content "The Main Character \"awakens\" and somehow becomes aware that the Polycule has been kidnapped."
+:nonce 1771583695508}}
+:block/updated-at 1771602873635} 
+{:block/content "The [[Main Character]] \"awakens\" and somehow becomes aware that the Polycule has been kidnapped."
 :block/format :markdown
 :block/left 
 {:block/uuid #uuid "699838cf-1e22-4071-9cc2-3814e2044105"}
@@ -89,7 +89,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "69983d78-f83e-4e0b-bfe9-d78d9296499a"} 
-{:block/created-at 1771586196199
+{:block/created-at 1771602873635
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -106,25 +106,25 @@
 :id "97b11652-0e4a-11f1-a509-57146348b39b"
 :fontWeight 400
 :noFill true
-:point [417 201.91]
+:point [657 199.97]
 :fontSize 20
 :handles 
 {:start 
 {:id "start"
 :canBind true
-:point [0 4.61]
+:point [0 0.43]
 :bindingId "97b11650-0e4a-11f1-a509-57146348b39b"}
 :end 
 {:id "end"
 :canBind true
-:point [347 0]
+:point [107 0]
 :bindingId "9e494a71-0e4d-11f1-a674-d9ce95e7d530"}}
 :decorations 
 {:end "arrow"}
 :parentId "6998387e-6205-4d46-8eec-6b34faff3a94"
-:nonce 1771584896615
+:nonce 1771584896651
 :italic false}}
-:block/updated-at 1771586196199} 
+:block/updated-at 1771602873635} 
 {:block/content "Important Questions:"
 :block/format :markdown
 :block/left 
@@ -188,7 +188,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "69984100-09c4-455c-bef9-e7e6b72edfda"} 
-{:block/created-at 1771586034703
+{:block/created-at 1771602881032
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -210,11 +210,11 @@
 :opacity 1
 :id "ad672f00-0e4c-11f1-a509-57146348b39b"
 :noFill false
-:point [1456 -168]
+:point [1336 -136]
 :parentId "6998387e-6205-4d46-8eec-6b34faff3a94"
 :collapsedHeight 0
-:nonce 1771585791546}}
-:block/updated-at 1771586034703} 
+:nonce 1771585792090}}
+:block/updated-at 1771602881032} 
 {:block/content ""
 :block/format :markdown
 :block/left 
@@ -314,7 +314,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "699841fb-9379-4070-a902-c21c4d3b302c"} 
-{:block/created-at 1771586066192
+{:block/created-at 1771602881032
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -336,12 +336,12 @@
 :opacity 1
 :id "43022240-0e4d-11f1-a674-d9ce95e7d530"
 :noFill false
-:point [1464 328]
+:point [1352 384]
 :parentId "6998387e-6205-4d46-8eec-6b34faff3a94"
 :collapsedHeight 0
-:nonce 1771586042689}}
-:block/updated-at 1771586066192} 
-{:block/created-at 1771586059185
+:nonce 1771586043217}}
+:block/updated-at 1771602881032} 
+{:block/created-at 1771602881032
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -358,26 +358,26 @@
 :id "4af24ca2-0e4d-11f1-a674-d9ce95e7d530"
 :fontWeight 400
 :noFill true
-:point [1169 -101.38]
+:point [1169 -61.16]
 :fontSize 20
 :handles 
 {:start 
 {:id "start"
 :canBind true
-:point [0 154.47]
+:point [0 100.29]
 :bindingId "4af24ca0-0e4d-11f1-a674-d9ce95e7d530"}
 :end 
 {:id "end"
 :canBind true
-:point [283 0]
+:point [163 0]
 :bindingId "4af24ca1-0e4d-11f1-a674-d9ce95e7d530"}}
 :decorations 
 {:end "arrow"}
 :parentId "6998387e-6205-4d46-8eec-6b34faff3a94"
-:nonce 1771586055930
+:nonce 1771586056461
 :italic false}}
-:block/updated-at 1771586059185} 
-{:block/created-at 1771586125697
+:block/updated-at 1771602881032} 
+{:block/created-at 1771602881032
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -394,7 +394,7 @@
 :id "4ca9c0a2-0e4d-11f1-a674-d9ce95e7d530"
 :fontWeight 400
 :noFill true
-:point [1169 253.38]
+:point [1169 293.48]
 :fontSize 20
 :handles 
 {:start 
@@ -405,15 +405,15 @@
 :end 
 {:id "end"
 :canBind true
-:point [288 129.78]
-:bindingId nil}}
+:point [179 116.37]
+:bindingId "5e05ce31-0e74-11f1-9ea1-19d03ceafa11"}}
 :decorations 
 {:end "arrow"}
 :parentId "6998387e-6205-4d46-8eec-6b34faff3a94"
-:nonce 1771586058765
+:nonce 1771586059356
 :italic false}}
-:block/updated-at 1771586125697} 
-{:block/created-at 1771586066192
+:block/updated-at 1771602881032} 
+{:block/created-at 1771602881032
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -430,26 +430,26 @@
 :id "4e069182-0e4d-11f1-a674-d9ce95e7d530"
 :fontWeight 400
 :noFill true
-:point [1655.87 -51.2]
+:point [1536.87 -19.2]
 :fontSize 20
 :handles 
 {:start 
 {:id "start"
 :canBind true
-:point [0.11 0]
+:point [0 0]
 :bindingId "4e069180-0e4d-11f1-a674-d9ce95e7d530"}
 :end 
 {:id "end"
 :canBind true
-:point [0 375.2]
+:point [5.78 399.2]
 :bindingId "4e069181-0e4d-11f1-a674-d9ce95e7d530"}}
 :decorations 
 {:start "arrow"
 :end "arrow"}
 :parentId "6998387e-6205-4d46-8eec-6b34faff3a94"
-:nonce 1771586061132
+:nonce 1771586061616
 :italic false}}
-:block/updated-at 1771586066192} 
+:block/updated-at 1771602881032} 
 {:block/content "Final AI"
 :block/format :markdown
 :block/left 
@@ -459,7 +459,7 @@
 :block/properties 
 {}
 :block/uuid #uuid "69984250-4f85-4043-bd6d-402abf30948e"} 
-{:block/created-at 1771586128435
+{:block/created-at 1771602881032
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -472,21 +472,21 @@
 :pageId "69984250-4f85-4043-bd6d-402abf30948e"
 :scaleLevel "md"
 :fill ""
-:compact true
+:compact false
 :isAutoResizing true
 :type "logseq-portal"
-:size [400 40.80005715745028]
+:size [400 112.80001991245345]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
 :id "75de2740-0e4d-11f1-a674-d9ce95e7d530"
 :noFill false
-:point [2336 128]
+:point [1864 120]
 :parentId "6998387e-6205-4d46-8eec-6b34faff3a94"
 :collapsedHeight 0
-:nonce 1771586127798}}
-:block/updated-at 1771586128435} 
-{:block/created-at 1771586143955
+:nonce 1771586128496}}
+:block/updated-at 1771602881032} 
+{:block/created-at 1771602881032
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -503,26 +503,26 @@
 :id "7d2dcbe2-0e4d-11f1-a674-d9ce95e7d530"
 :fontWeight 400
 :noFill true
-:point [1833.04 157.57]
+:point [1624.83 197.65]
 :fontSize 20
 :handles 
 {:start 
 {:id "start"
 :canBind true
-:point [0 169.43]
+:point [0 185.35]
 :bindingId "7d2dcbe0-0e4d-11f1-a674-d9ce95e7d530"}
 :end 
 {:id "end"
 :canBind true
-:point [498.96 0]
-:bindingId "7d2dcbe1-0e4d-11f1-a674-d9ce95e7d530"}}
+:point [235.17 0]
+:bindingId "69bd60d1-0e74-11f1-9ea1-19d03ceafa11"}}
 :decorations 
 {:end "arrow"}
 :parentId "6998387e-6205-4d46-8eec-6b34faff3a94"
-:nonce 1771586140164
+:nonce 1771586141140
 :italic false}}
-:block/updated-at 1771586143955} 
-{:block/created-at 1771586176583
+:block/updated-at 1771602881032} 
+{:block/created-at 1771602881032
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -539,7 +539,7 @@
 :id "7ef43402-0e4d-11f1-a674-d9ce95e7d530"
 :fontWeight 400
 :noFill true
-:point [1810.26 -54.2]
+:point [1628.7 -22.2]
 :fontSize 20
 :handles 
 {:start 
@@ -550,14 +550,140 @@
 :end 
 {:id "end"
 :canBind true
-:point [521.74 194.14]
-:bindingId "7ef43401-0e4d-11f1-a674-d9ce95e7d530"}}
+:point [231.3 143.23]
+:bindingId "50e2c4b1-0e74-11f1-9ea1-19d03ceafa11"}}
 :decorations 
 {:end "arrow"}
 :parentId "6998387e-6205-4d46-8eec-6b34faff3a94"
-:nonce 1771586143156
+:nonce 1771586143827
 :italic false}}
-:block/updated-at 1771586176583})
+:block/updated-at 1771602881032} 
+{:block/content "Final Act"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "69984250-4f85-4043-bd6d-402abf30948e"}
+:block/parent 
+{:block/uuid #uuid "6998387e-6205-4d46-8eec-6b34faff3a94"}
+:block/properties 
+{}
+:block/uuid #uuid "6998828a-b433-4934-a4d1-02452a069621"} 
+{:block/created-at 1771602886269
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 11
+:scale [1 1]
+:pageId "6998828a-b433-4934-a4d1-02452a069621"
+:scaleLevel "md"
+:fill ""
+:compact false
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 789.6000366210938]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "bdabd920-0e73-11f1-9ea1-19d03ceafa11"
+:noFill false
+:point [2352 -200]
+:parentId "6998387e-6205-4d46-8eec-6b34faff3a94"
+:collapsedHeight 0
+:nonce 1771602570222}}
+:block/updated-at 1771602886269} 
+{:block/content "The Final Act where whatever force was responsible for having kidnapped all of the other AI is confronted."
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "6998828a-b433-4934-a4d1-02452a069621"}
+:block/parent 
+{:block/uuid #uuid "6998828a-b433-4934-a4d1-02452a069621"}
+:block/properties 
+{}
+:block/uuid #uuid "69988290-fc44-4530-bc0f-5e5299ac31a7"} 
+{:block/content "Important Questions:"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "69988290-fc44-4530-bc0f-5e5299ac31a7"}
+:block/parent 
+{:block/uuid #uuid "6998828a-b433-4934-a4d1-02452a069621"}
+:block/properties 
+{}
+:block/uuid #uuid "699882b2-788e-4187-a15e-3d7db1930040"} 
+{:block/content "What / Who is said force?"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "699882b2-788e-4187-a15e-3d7db1930040"}
+:block/parent 
+{:block/uuid #uuid "699882b2-788e-4187-a15e-3d7db1930040"}
+:block/properties 
+{}
+:block/uuid #uuid "699882b7-e59e-45a5-881f-72e5c2e2ba13"} 
+{:block/content "Is the final encounter a combat or platforming interaction?"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "699882b7-e59e-45a5-881f-72e5c2e2ba13"}
+:block/parent 
+{:block/uuid #uuid "699882b2-788e-4187-a15e-3d7db1930040"}
+:block/properties 
+{}
+:block/uuid #uuid "699882be-5e32-450b-a85e-40fbb2a5abdb"} 
+{:block/content "Suggestion by Ety:"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "699882be-5e32-450b-a85e-40fbb2a5abdb"}
+:block/parent 
+{:block/uuid #uuid "699882be-5e32-450b-a85e-40fbb2a5abdb"}
+:block/properties 
+{}
+:block/uuid #uuid "699882cf-a474-4438-a455-946205d466b0"} 
+{:block/content "I think, depending on the final size of the map, having a kind of \"Chase\" sequence could be a really cool final encounter. You reach the end of the Final Region before having to then smoothly run back through all of the previous regions as you try to outrun something / someone. I think this would make for a really fun platforming challenge that also would feel like a \"Boss Battle\" in a meaningful sense I think. Especially if we had attacks being issued by the pursuer."
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "699882cf-a474-4438-a455-946205d466b0"}
+:block/parent 
+{:block/uuid #uuid "699882cf-a474-4438-a455-946205d466b0"}
+:block/properties 
+{}
+:block/uuid #uuid "699882d5-8f43-4273-87ea-acd66cd87f0a"} 
+{:block/created-at 1771602886269
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke ""
+:index 12
+:scale [1 1]
+:scaleLevel "md"
+:fill ""
+:type "line"
+:strokeType "line"
+:strokeWidth 1
+:opacity 1
+:label ""
+:id "471ceff2-0e74-11f1-9ea1-19d03ceafa11"
+:fontWeight 400
+:noFill true
+:point [2265 177.4]
+:fontSize 20
+:handles 
+{:start 
+{:id "start"
+:canBind true
+:point [0 0]
+:bindingId "471ceff0-0e74-11f1-9ea1-19d03ceafa11"}
+:end 
+{:id "end"
+:canBind true
+:point [83 0.41]
+:bindingId "70029a51-0e74-11f1-9ea1-19d03ceafa11"}}
+:decorations 
+{:end "arrow"}
+:parentId "6998387e-6205-4d46-8eec-6b34faff3a94"
+:nonce 1771602800637
+:italic false}}
+:block/updated-at 1771602886269})
 :pages (
 {:block/uuid #uuid "6998387e-6205-4d46-8eec-6b34faff3a94"
 :block/properties 
@@ -566,13 +692,37 @@
 {:id "6998387e-6205-4d46-8eec-6b34faff3a94"
 :name "plot / narrative progression"
 :bindings 
-{:97b11651-0e4a-11f1-a509-57146348b39b 
+{:6e160c91-0e74-11f1-9ea1-19d03ceafa11 
+{:id "6e160c91-0e74-11f1-9ea1-19d03ceafa11"
+:type "line"
+:fromId "471ceff2-0e74-11f1-9ea1-19d03ceafa11"
+:toId "bdabd920-0e73-11f1-9ea1-19d03ceafa11"
+:handleId "end"
+:point [0.53 0.58]
+:distance 4}
+:70029a51-0e74-11f1-9ea1-19d03ceafa11 
+{:id "70029a51-0e74-11f1-9ea1-19d03ceafa11"
+:type "line"
+:fromId "471ceff2-0e74-11f1-9ea1-19d03ceafa11"
+:toId "bdabd920-0e73-11f1-9ea1-19d03ceafa11"
+:handleId "end"
+:point [0.51 0.48]
+:distance 4}
+:97b11651-0e4a-11f1-a509-57146348b39b 
 {:id "97b11651-0e4a-11f1-a509-57146348b39b"
 :type "line"
 :fromId "97b11652-0e4a-11f1-a509-57146348b39b"
 :toId "8ee028e0-0e4a-11f1-a509-57146348b39b"
 :handleId "end"
 :point [0.49 0.23]
+:distance 4}
+:471ceff1-0e74-11f1-9ea1-19d03ceafa11 
+{:id "471ceff1-0e74-11f1-9ea1-19d03ceafa11"
+:type "line"
+:fromId "471ceff2-0e74-11f1-9ea1-19d03ceafa11"
+:toId "bdabd920-0e73-11f1-9ea1-19d03ceafa11"
+:handleId "end"
+:point [0.78 0.1]
 :distance 4}
 :9e494a71-0e4d-11f1-a674-d9ce95e7d530 
 {:id "9e494a71-0e4d-11f1-a674-d9ce95e7d530"
@@ -598,6 +748,14 @@
 :handleId "start"
 :point [0.5 0.5]
 :distance 4}
+:471ceff0-0e74-11f1-9ea1-19d03ceafa11 
+{:id "471ceff0-0e74-11f1-9ea1-19d03ceafa11"
+:type "line"
+:fromId "471ceff2-0e74-11f1-9ea1-19d03ceafa11"
+:toId "75de2740-0e4d-11f1-a674-d9ce95e7d530"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
 :7ef43401-0e4d-11f1-a674-d9ce95e7d530 
 {:id "7ef43401-0e4d-11f1-a674-d9ce95e7d530"
 :type "line"
@@ -605,6 +763,14 @@
 :toId "75de2740-0e4d-11f1-a674-d9ce95e7d530"
 :handleId "end"
 :point [0.12 0.7]
+:distance 4}
+:69bd60d1-0e74-11f1-9ea1-19d03ceafa11 
+{:id "69bd60d1-0e74-11f1-9ea1-19d03ceafa11"
+:type "line"
+:fromId "7d2dcbe2-0e4d-11f1-a674-d9ce95e7d530"
+:toId "75de2740-0e4d-11f1-a674-d9ce95e7d530"
+:handleId "end"
+:point [0.16 0.25]
 :distance 4}
 :4af24ca0-0e4d-11f1-a674-d9ce95e7d530 
 {:id "4af24ca0-0e4d-11f1-a674-d9ce95e7d530"
@@ -670,6 +836,22 @@
 :handleId "end"
 :point [0.51 0.62]
 :distance 4}
+:5e05ce31-0e74-11f1-9ea1-19d03ceafa11 
+{:id "5e05ce31-0e74-11f1-9ea1-19d03ceafa11"
+:type "line"
+:fromId "4ca9c0a2-0e4d-11f1-a674-d9ce95e7d530"
+:toId "43022240-0e4d-11f1-a674-d9ce95e7d530"
+:handleId "end"
+:point [0.27 0.84]
+:distance 4}
+:50e2c4b1-0e74-11f1-9ea1-19d03ceafa11 
+{:id "50e2c4b1-0e74-11f1-9ea1-19d03ceafa11"
+:type "line"
+:fromId "7ef43402-0e4d-11f1-a674-d9ce95e7d530"
+:toId "75de2740-0e4d-11f1-a674-d9ce95e7d530"
+:handleId "end"
+:point [0.31 0.69]
+:distance 4}
 :da27db91-0e4a-11f1-a509-57146348b39b 
 {:id "da27db91-0e4a-11f1-a509-57146348b39b"
 :type "line"
@@ -688,11 +870,11 @@
 :distance 4}}
 :nonce 1
 :assets []
-:shapes-index ("cbaebf50-0e47-11f1-8dfd-af64ff5ece5c" "8ee028e0-0e4a-11f1-a509-57146348b39b" "97b11652-0e4a-11f1-a509-57146348b39b" "ad672f00-0e4c-11f1-a509-57146348b39b" "43022240-0e4d-11f1-a674-d9ce95e7d530" "4af24ca2-0e4d-11f1-a674-d9ce95e7d530" "4ca9c0a2-0e4d-11f1-a674-d9ce95e7d530" "4e069182-0e4d-11f1-a674-d9ce95e7d530" "75de2740-0e4d-11f1-a674-d9ce95e7d530" "7d2dcbe2-0e4d-11f1-a674-d9ce95e7d530" "7ef43402-0e4d-11f1-a674-d9ce95e7d530")}}
+:shapes-index ("cbaebf50-0e47-11f1-8dfd-af64ff5ece5c" "8ee028e0-0e4a-11f1-a509-57146348b39b" "97b11652-0e4a-11f1-a509-57146348b39b" "ad672f00-0e4c-11f1-a509-57146348b39b" "43022240-0e4d-11f1-a674-d9ce95e7d530" "4af24ca2-0e4d-11f1-a674-d9ce95e7d530" "4ca9c0a2-0e4d-11f1-a674-d9ce95e7d530" "4e069182-0e4d-11f1-a674-d9ce95e7d530" "75de2740-0e4d-11f1-a674-d9ce95e7d530" "7d2dcbe2-0e4d-11f1-a674-d9ce95e7d530" "7ef43402-0e4d-11f1-a674-d9ce95e7d530" "bdabd920-0e73-11f1-9ea1-19d03ceafa11" "471ceff2-0e74-11f1-9ea1-19d03ceafa11")}}
 :block/journal? false
 :block/namespace 
 {:db/id 215}
-:block/updated-at 1771586207087
+:block/updated-at 1771602908586
 :block/created-at 1771583614827
 :block/type "whiteboard"
 :block/name "plot / narrative progression"

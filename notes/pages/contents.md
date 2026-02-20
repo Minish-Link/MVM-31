@@ -1,1 +1,9 @@
--
+- Characters
+	- [[Main Character]]
+	- [[Operator AIs]]
+- [[Plot / Narrative Progression]]
+- [[Map]]
+- Systems
+	- [[Abilities]]
+	- [[Dynamic Music]]
+	- [[Settings Select]]
