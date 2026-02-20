@@ -5,10 +5,11 @@ extends State
 @export var attack_duration := 0.5
 @export var damage_box: DamageBoxComponent
 
-func enter_state() -> void:
+func enter() -> void:
+	print("entering attack state")
 	damage_box.activate()
 
-func exit_state() -> void:
+func exit() -> void:
 	if damage_box:
 		damage_box.deactivate()
 

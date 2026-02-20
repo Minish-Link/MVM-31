@@ -5,10 +5,10 @@ class_name State
 signal Transitioned(state: State, new_state_name: String)
 var parent: CharacterBody3D
 
-func enter_state():
+func enter() -> void:
 	pass
 
-func exit_state():
+func exit() -> void:
 	pass
 
 func update(delta: float) -> void:

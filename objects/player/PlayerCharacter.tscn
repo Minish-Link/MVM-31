@@ -5,12 +5,13 @@
 [ext_resource type="Script" uid="uid://d6nyquxedbl3" path="res://scripts/state_machine.gd" id="3_w8j34"]
 [ext_resource type="Script" uid="uid://co0215wsjsmnv" path="res://objects/player/states/idle.gd" id="4_2r7dn"]
 [ext_resource type="PackedScene" uid="uid://dgjpbw0nris7n" path="res://objects/components/HealthComponent.tscn" id="5_3n5ai"]
-[ext_resource type="Script" uid="uid://c0lahi5wofghk" path="res://objects/player/states/move.gd" id="5_id1qo"]
+[ext_resource type="Script" uid="uid://c0lahi5wofghk" path="res://objects/player/states/walk.gd" id="5_id1qo"]
 [ext_resource type="PackedScene" uid="uid://davjvuhbb2fib" path="res://objects/components/HitboxComponent.tscn" id="6_bckj6"]
 [ext_resource type="Script" uid="uid://cb6r57jehqqn4" path="res://objects/player/states/jump.gd" id="6_uqdnk"]
 [ext_resource type="PackedScene" uid="uid://dptjs67q64i8i" path="res://objects/components/DamageBoxComponent.tscn" id="7_3euug"]
 [ext_resource type="Script" uid="uid://bijm64vqhn2a5" path="res://objects/player/states/slide.gd" id="7_jnw1j"]
 [ext_resource type="Script" uid="uid://chmyiy8snolxa" path="res://objects/player/states/basic_attack.gd" id="8_7t6o0"]
+[ext_resource type="Script" uid="uid://dyfb1akhfnucy" path="res://objects/player/fall.gd" id="9_uqdnk"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ski25"]
 radius = 0.45
@@ -35,10 +36,6 @@ script = ExtResource("1_wrsal")
 BRAKE_SPEED = 10.0
 JUMP_VELOCITY = 8.0
 MINIMUM_JUMP_TIME = 0.05
-SLIDE_TIME = 0.25
-SLIDE_SPEED = 10.0
-SLIDE_DECAY_DELAY = 0.15
-SLIDE_DECAY_RATE = 10.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=588400986]
 unique_name_in_owner = true
@@ -58,13 +55,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.4095912)
 projection = 1
 size = 10.0
 
-[node name="StateMachine" type="Node" parent="." unique_id=1300399073]
+[node name="StateMachine" type="Node" parent="." unique_id=1300399073 node_paths=PackedStringArray("initial_state")]
 script = ExtResource("3_w8j34")
+initial_state = NodePath("Idle")
 
 [node name="Idle" type="Node" parent="StateMachine" unique_id=1202406028]
 script = ExtResource("4_2r7dn")
 
-[node name="Move" type="Node" parent="StateMachine" unique_id=482518256]
+[node name="Walk" type="Node" parent="StateMachine" unique_id=482518256]
 script = ExtResource("5_id1qo")
 
 [node name="Jump" type="Node" parent="StateMachine" unique_id=321111278]
@@ -72,9 +70,13 @@ script = ExtResource("6_uqdnk")
 
 [node name="Slide" type="Node" parent="StateMachine" unique_id=2011431557]
 script = ExtResource("7_jnw1j")
+SLIDE_SPEED = 10.0
 
 [node name="BasicAttack" type="Node" parent="StateMachine" unique_id=823881416]
 script = ExtResource("8_7t6o0")
+
+[node name="Fall" type="Node" parent="StateMachine" unique_id=805685856]
+script = ExtResource("9_uqdnk")
 
 [node name="HealthComponent" parent="." unique_id=1758599706 instance=ExtResource("5_3n5ai")]
 
@@ -85,3 +87,6 @@ health_component = NodePath("../HealthComponent")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.75, 0, 0)
 team = 1
 ignored_hitboxes = [NodePath("../HitboxComponent")]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="DamageBoxComponent" unique_id=436327432]
+polygon = PackedVector2Array(1, 0, -1, -1, -0.5, 0, -1, 1)
