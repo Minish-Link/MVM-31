@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://b3cy1xt2ncfrk"]
+
+[ext_resource type="Script" uid="uid://b580o80c7o8hl" path="res://objects/components/damage_box_component.gd" id="1_4s3l4"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_2xcj2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4s3l4"]
+albedo_color = Color(1, 0.63529414, 0, 1)
+
+[node name="SlashEffect" type="Area3D" unique_id=241104336]
+script = ExtResource("1_4s3l4")
+prevent_multihit = true
+team = 1
+metadata/_custom_type_script = "uid://b580o80c7o8hl"
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="." unique_id=1092301431]
+polygon = PackedVector2Array(1, 0, -1, -1, -0.5, 0, -1, 1)
+
+[node name="DebugDeleteLater" type="MeshInstance3D" parent="." unique_id=2090140333]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.015921593, 0, 0)
+mesh = SubResource("SphereMesh_2xcj2")
+surface_material_override/0 = SubResource("StandardMaterial3D_4s3l4")
+
+[connection signal="area_entered" from="." to="." method="_on_hitbox_entered"]

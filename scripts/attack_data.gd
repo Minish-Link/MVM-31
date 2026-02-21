@@ -14,7 +14,19 @@ var knockback_target := Vector3.ZERO
 # how much the knockback force decreases with distance (decreases by this rate for each unit away from the origin)
 var knockback_falloff_rate := 0.0
 
-func _init(_damage: float, _ignores_invulnerable: bool = false, _knockback_force: float = 0.0, _knockback_from: Vector3 = Vector3.ZERO, _knockback_toward: Vector3 = Vector3.ZERO, _knockback_falloff = 0.0):
+# if true, the player will be forced to respawn at their previous respawn point
+var voids_out_player := false
+
+func _init(
+	_damage: float,
+	 _ignores_invulnerable: bool = false,
+	 _knockback_force: float = 0.0,
+	_knockback_from: Vector3 = Vector3.ZERO,
+	_knockback_toward: Vector3 = Vector3.ZERO,
+	_knockback_falloff: float = 0.0,
+	_voids_player: bool = false
+	):
+		
 	damage = _damage
 	ignores_invulnerability = _ignores_invulnerable
 	knockback_force = _knockback_force

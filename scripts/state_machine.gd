@@ -19,22 +19,29 @@ func sm_init(parent: CharacterBody3D) -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if current_state:
-		current_state.update(delta)
+		current_state._update(delta)
 
 func _physics_process(delta: float) -> void:
 	if current_state:
-		current_state.physics_update(delta)
+		current_state._physics_update(delta)
 
 func on_child_transition(state, new_state_name):
 	if state != current_state:
 		return
 	
 	var new_state = states.get(new_state_name.to_lower())
-	if !new_state:
+	if !new_state or new_state_name.to_lower() == state.name.to_lower():
 		return
 	
 	if current_state:
-		current_state.exit()
+		current_state._exit()
 	
-	new_state.enter()
+	new_state._enter()
 	current_state = new_state
+
+## Attempt to force the state machine to switch to a state with the given name.
+## Returns true if the state successfully changed, false otherwise
+func attempt_force_state_change(new_state_name: String) -> bool:
+	if current_state:
+		return current_state._force_state_switch(new_state_name)
+	return false

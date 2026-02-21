@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://dwjdbdqpsy1bo"]
+
+[ext_resource type="Script" uid="uid://bwy8v6o66fsup" path="res://objects/environment/breakable_object.gd" id="1_p1uvk"]
+[ext_resource type="PackedScene" uid="uid://dgjpbw0nris7n" path="res://objects/components/HealthComponent.tscn" id="2_2pua6"]
+[ext_resource type="PackedScene" uid="uid://davjvuhbb2fib" path="res://objects/components/HitboxComponent.tscn" id="3_5hdlb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2itfb"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_lujkf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pmynu"]
+albedo_color = Color(0.3372549, 0.19607843, 0, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p1uvk"]
+
+[node name="BreakableObject" type="StaticBody3D" unique_id=1926595805 node_paths=PackedStringArray("hitbox", "health")]
+script = ExtResource("1_p1uvk")
+hitbox = NodePath("HitboxComponent")
+health = NodePath("HealthComponent")
+
+[node name="HealthComponent" parent="." unique_id=1758599706 instance=ExtResource("2_2pua6")]
+MAX_HEALTH = 30.0
+
+[node name="HitboxComponent" parent="." unique_id=1077715365 node_paths=PackedStringArray("health_component") instance=ExtResource("3_5hdlb")]
+health_component = NodePath("../HealthComponent")
+
+[node name="CollisionShape3D" parent="HitboxComponent" index="0" unique_id=2052834604]
+shape = SubResource("BoxShape3D_2itfb")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=505126518]
+mesh = SubResource("BoxMesh_lujkf")
+surface_material_override/0 = SubResource("StandardMaterial3D_pmynu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1528076430]
+shape = SubResource("BoxShape3D_p1uvk")
+
+[editable path="HitboxComponent"]

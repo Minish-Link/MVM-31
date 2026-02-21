@@ -8,7 +8,7 @@ var slide_countdown := 0.0
 var slide_decay_countdown := 0.0
 var slide_dir := 0.0
 
-func enter() -> void:
+func _enter() -> void:
 	print("entering slide state")
 	if parent is Player:
 		parent.horizontal_input_allowed = false
@@ -19,7 +19,7 @@ func enter() -> void:
 	%CollisionShape3D.shape.height *= 0.5
 	%MeshInstance3D.mesh.height *= 0.5
 
-func exit() -> void:
+func _exit() -> void:
 	if parent is Player:
 		parent.horizontal_input_allowed = true
 		parent.current_walk_speed = SLIDE_SPEED
@@ -27,10 +27,7 @@ func exit() -> void:
 	%CollisionShape3D.shape.height *= 2.0
 	%MeshInstance3D.mesh.height *= 2.0
 
-func update(delta: float) -> void:
-	pass
-
-func physics_update(delta: float) -> void:
+func _physics_update(delta: float) -> void:
 	parent.velocity.x = SLIDE_SPEED * slide_dir
 	slide_countdown -= delta
 	if slide_countdown <= 0.0 and stop_sliding and not %CeilingChecker.is_colliding():
@@ -46,5 +43,3 @@ func _input(event: InputEvent) -> void:
 		stop_sliding = true
 	elif event.is_action_pressed("slide"):
 		stop_sliding = false
-	if event.is_action_pressed("jump"):
-		Transitioned.emit(self, "jump")

@@ -2,7 +2,12 @@
 
 [ext_resource type="Script" uid="uid://b580o80c7o8hl" path="res://objects/components/damage_box_component.gd" id="1_iaaka"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_iaaka"]
+
 [node name="DamageBoxComponent" type="Area3D" unique_id=987569012]
 script = ExtResource("1_iaaka")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=782361343]
+shape = SubResource("BoxShape3D_iaaka")
 
 [connection signal="area_entered" from="." to="." method="_on_hitbox_entered"]

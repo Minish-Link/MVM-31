@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://gq4qjmc2vc8a"]
 
 [ext_resource type="PackedScene" uid="uid://dptjs67q64i8i" path="res://objects/components/DamageBoxComponent.tscn" id="1_m2onx"]
+[ext_resource type="PackedScene" uid="uid://dwjdbdqpsy1bo" path="res://objects/environment/BreakableObject.tscn" id="2_omjae"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_omjae"]
 
@@ -14,8 +15,6 @@ reflected_light_source = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_omjae"]
 albedo_color = Color(1, 0, 0, 1)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_aklg6"]
 
 [node name="TestingLevel" type="Node3D" unique_id=200580513]
 
@@ -84,8 +83,28 @@ mesh = SubResource("BoxMesh_omjae")
 surface_material_override/0 = SubResource("StandardMaterial3D_omjae")
 
 [node name="DamageBoxComponent" parent="Platform5" unique_id=987569012 instance=ExtResource("1_m2onx")]
-start_active = true
 damage = 1000.0
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform5/DamageBoxComponent" unique_id=1860681766]
-shape = SubResource("BoxShape3D_aklg6")
+[node name="BreakableObject" parent="." unique_id=762232932 instance=ExtResource("2_omjae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
+
+[node name="BreakableObject2" parent="." unique_id=1926595805 instance=ExtResource("2_omjae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 0)
+
+[node name="BreakableObject3" parent="." unique_id=1245323959 instance=ExtResource("2_omjae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 1, 0)
+
+[node name="BreakableObject4" parent="." unique_id=1716042314 instance=ExtResource("2_omjae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 1, 0)
+
+[node name="BreakableObject5" parent="." unique_id=1792219710 instance=ExtResource("2_omjae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 0)
+
+[node name="BreakableObject6" parent="." unique_id=527642287 instance=ExtResource("2_omjae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 6, 0)
+
+[node name="BreakableObject7" parent="." unique_id=330093280 instance=ExtResource("2_omjae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 3, 0)
+
+[node name="BreakableObject8" parent="." unique_id=884043914 instance=ExtResource("2_omjae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 0)

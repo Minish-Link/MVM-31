@@ -58,44 +58,24 @@ size = 10.0
 script = ExtResource("3_w8j34")
 initial_state = NodePath("Idle")
 
-[node name="Idle" type="Node" parent="StateMachine" unique_id=1202406028 node_paths=PackedStringArray("allowed_exit_states")]
+[node name="Idle" type="Node" parent="StateMachine" unique_id=1202406028]
 script = ExtResource("4_2r7dn")
-allowed_exit_states = [NodePath("../BasicAttack"), NodePath("../Slide"), NodePath("../Walk"), NodePath("../Jump"), NodePath("../Fall")]
 
-[node name="Walk" type="Node" parent="StateMachine" unique_id=482518256 node_paths=PackedStringArray("allowed_exit_states")]
+[node name="Walk" type="Node" parent="StateMachine" unique_id=482518256]
 script = ExtResource("5_id1qo")
-allowed_exit_states = [NodePath("../Idle"), NodePath("../Jump"), NodePath("../Slide"), NodePath("../BasicAttack"), NodePath("../Fall")]
 
-[node name="Jump" type="Node" parent="StateMachine" unique_id=321111278 node_paths=PackedStringArray("allowed_exit_states")]
+[node name="Jump" type="Node" parent="StateMachine" unique_id=321111278]
 script = ExtResource("6_uqdnk")
-allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../Fall"), NodePath("../BasicAttack")]
 
-[node name="Slide" type="Node" parent="StateMachine" unique_id=2011431557 node_paths=PackedStringArray("allowed_exit_states")]
+[node name="Slide" type="Node" parent="StateMachine" unique_id=2011431557]
 script = ExtResource("7_jnw1j")
 SLIDE_SPEED = 10.0
-allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../Jump"), NodePath("../Fall")]
 
-[node name="BasicAttack" type="Node" parent="StateMachine" unique_id=823881416 node_paths=PackedStringArray("delay_timer", "cooldown_timer", "exit_timer", "allowed_exit_states")]
+[node name="BasicAttack" type="Node" parent="StateMachine" unique_id=823881416]
 script = ExtResource("8_7t6o0")
-ATTACK_DURATION = 0.2
-ATTACK_DAMAGE = 10.0
-delay_timer = NodePath("DelayTimer")
-cooldown_timer = NodePath("CooldownTimer")
-exit_timer = NodePath("ExitTimer")
-allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../Fall"), NodePath("../Jump")]
 
-[node name="DelayTimer" type="Timer" parent="StateMachine/BasicAttack" unique_id=1899378193]
-one_shot = true
-
-[node name="CooldownTimer" type="Timer" parent="StateMachine/BasicAttack" unique_id=1295163299]
-one_shot = true
-
-[node name="ExitTimer" type="Timer" parent="StateMachine/BasicAttack" unique_id=1238154570]
-one_shot = true
-
-[node name="Fall" type="Node" parent="StateMachine" unique_id=805685856 node_paths=PackedStringArray("allowed_exit_states")]
+[node name="Fall" type="Node" parent="StateMachine" unique_id=805685856]
 script = ExtResource("9_uqdnk")
-allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../BasicAttack")]
 
 [node name="HealthComponent" parent="." unique_id=1758599706 instance=ExtResource("5_3n5ai")]
 
