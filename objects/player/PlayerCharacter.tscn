@@ -35,6 +35,7 @@ script = ExtResource("1_wrsal")
 BRAKE_SPEED = 10.0
 JUMP_VELOCITY = 8.0
 MINIMUM_JUMP_TIME = 0.05
+bufferable_inputs = Array[String](["jump", "attack", "slide"])
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=588400986]
 unique_name_in_owner = true
@@ -52,7 +53,7 @@ target_position = Vector3(0, 1, 0)
 [node name="Camera3D" type="Camera3D" parent="." unique_id=62274711]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.4095912)
 projection = 1
-size = 10.0
+size = 16.0
 
 [node name="StateMachine" type="Node" parent="." unique_id=1300399073 node_paths=PackedStringArray("initial_state")]
 script = ExtResource("3_w8j34")
@@ -72,7 +73,7 @@ allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../Fa
 
 [node name="Slide" type="Node" parent="StateMachine" unique_id=2011431557 node_paths=PackedStringArray("allowed_exit_states")]
 script = ExtResource("7_jnw1j")
-SLIDE_SPEED = 10.0
+SLIDE_ACCELERATION = 2.0
 allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../Jump"), NodePath("../Fall")]
 
 [node name="BasicAttack" type="Node" parent="StateMachine" unique_id=823881416 node_paths=PackedStringArray("delay_timer", "cooldown_timer", "exit_timer", "allowed_exit_states")]

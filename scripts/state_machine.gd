@@ -39,6 +39,9 @@ func on_child_transition(state, new_state_name):
 	new_state._enter()
 	current_state = new_state
 
+func is_in_state(state_name: String) -> bool:
+	return state_name.to_lower() == current_state.name.to_lower()
+
 ## Attempt to force the state machine to switch to a state with the given name.
 ## Returns true if the state successfully changed, false otherwise
 func attempt_force_state_change(new_state_name: String) -> bool:
