@@ -7,3 +7,4 @@
 	- [[Abilities]]
 	- [[Dynamic Music]]
 	- [[Settings Select]]
+	- [[Dialogue]]
