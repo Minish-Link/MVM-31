@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 PlayerCharacter="*uid://b5k6yq7y35n1p"
 GameCamera="*uid://dxf7ibrenk3fo"
 WorldData="*uid://b0pj2na5e2gt5"
+DynamicMusicPlayer="*uid://cy0aaa3xpfh21"
 
 [dotnet]
 
