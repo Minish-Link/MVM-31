@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://cy0aaa3xpfh21"]
+
+[node name="DynamicMusicPlayer" type="AudioStreamPlayer" unique_id=379067431]

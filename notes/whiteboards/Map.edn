@@ -1,5 +1,5 @@
 {:blocks (
-{:block/created-at 1771586252623
+{:block/created-at 1771749319897
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -21,9 +21,9 @@
 :point [480 128]
 :fontSize 20
 :parentId "69983e9e-0bad-4872-b126-b0e791329d44"
-:nonce 1771586232690
+:nonce 1771586232743
 :italic false}}
-:block/updated-at 1771586252623} 
+:block/updated-at 1771749319897} 
 {:block/created-at 1771586246211
 :block/properties 
 {:ls-type :whiteboard-shape
@@ -50,7 +50,7 @@
 :nonce 1771586232951
 :italic false}}
 :block/updated-at 1771586246211} 
-{:block/created-at 1771586302853
+{:block/created-at 1771749324303
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -67,25 +67,26 @@
 :id "c2450590-0e4d-11f1-a674-d9ce95e7d530"
 :fontWeight 400
 :noFill true
-:point [704 240]
+:point [708 240]
 :fontSize 20
 :handles 
 {:start 
 {:id "start"
 :canBind true
-:point [0 0]}
+:point [0 0]
+:bindingId "6defc7f1-0fc9-11f1-bfa5-8f8d48276ae6"}
 :end 
 {:id "end"
 :canBind true
-:point [60 0]
+:point [56 0]
 :bindingId "c244de81-0e4d-11f1-a674-d9ce95e7d530"}}
 :decorations 
 {:start "arrow"
 :end "arrow"}
 :parentId "69983e9e-0bad-4872-b126-b0e791329d44"
-:nonce 1771586256024
+:nonce 1771586256116
 :italic false}}
-:block/updated-at 1771586302853} 
+:block/updated-at 1771749324303} 
 {:block/created-at 1771586354622
 :block/properties 
 {:ls-type :whiteboard-shape
@@ -438,7 +439,7 @@
 :nonce 1771586233263
 :italic false}}
 :block/updated-at 1771586472265} 
-{:block/created-at 1771586478063
+{:block/created-at 1771749095167
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -453,7 +454,7 @@
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
-:label "First Region"
+:label "Second Region - Extra"
 :id "344cea90-0e4e-11f1-a674-d9ce95e7d530"
 :fontWeight 400
 :noFill false
@@ -461,9 +462,9 @@
 :point [1024 672]
 :fontSize 20
 :parentId "69983e9e-0bad-4872-b126-b0e791329d44"
-:nonce 1771586233337
+:nonce 1771586233358
 :italic false}}
-:block/updated-at 1771586478063} 
+:block/updated-at 1771749095167} 
 {:block/created-at 1771586487776
 :block/properties 
 {:ls-type :whiteboard-shape
@@ -566,13 +567,121 @@
 :nonce 1771586525682
 :italic false
 :text "Abstract Region Layout\n- Suggestion by Ety"}}
-:block/updated-at 1771586549382})
+:block/updated-at 1771586549382} 
+{:block/content ""
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "6999471e-f938-4182-abea-5b129f98b2d1"}
+:block/parent 
+{:block/uuid #uuid "6999471e-f938-4182-abea-5b129f98b2d1"}
+:block/properties 
+{}
+:block/uuid #uuid "6999473d-ba1b-471b-bbd7-a0f951a08151"} 
+{:block/content "[[A Bittersweet Beginning]]"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "6999473d-ba1b-471b-bbd7-a0f951a08151"}
+:block/parent 
+{:block/uuid #uuid "6999471e-f938-4182-abea-5b129f98b2d1"}
+:block/properties 
+{}
+:block/uuid #uuid "699ac09a-222f-4647-8a1d-84375726c5ac"} 
+{:block/created-at 1771751427034
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "P"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 18
+:scale [1 1]
+:pageId "A Bittersweet Beginning"
+:scaleLevel "md"
+:fill ""
+:compact false
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 142.79998380787922]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "f1ec89d0-0fc9-11f1-bfa5-8f8d48276ae6"
+:noFill false
+:isLocked false
+:point [328 408]
+:parentId "6999471e-f938-4182-abea-5b129f98b2d1"
+:collapsedHeight 0
+:nonce 1771749546184}}
+:block/updated-at 1771751427034} 
+{:block/content ""
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "699ac09a-222f-4647-8a1d-84375726c5ac"}
+:block/parent 
+{:block/uuid #uuid "6999471e-f938-4182-abea-5b129f98b2d1"}
+:block/uuid #uuid "699ac20f-060b-4271-b213-22eea81652b8"} 
+{:block/created-at 1771750017711
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "P"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 19
+:scale [1 1]
+:pageId "Penultimate"
+:scaleLevel "md"
+:fill ""
+:compact false
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 142.79992574526082]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "d3ab8600-0fca-11f1-bfa5-8f8d48276ae6"
+:noFill false
+:isLocked false
+:point [1392 424]
+:parentId "6999471e-f938-4182-abea-5b129f98b2d1"
+:collapsedHeight 0
+:nonce 1771749923867}}
+:block/updated-at 1771750017711} 
+{:block/created-at 1771750039729
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 20
+:scale [1 1]
+:pageId "69982bf7-6e50-4e7b-97da-77bfaca622c1"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 70.79995024971613]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "012e1110-0fcb-11f1-bfa5-8f8d48276ae6"
+:noFill false
+:point [1688 272]
+:parentId "6999471e-f938-4182-abea-5b129f98b2d1"
+:collapsedHeight 0
+:nonce 1771750000125}}
+:block/updated-at 1771750039729})
 :pages (
-{:block/uuid #uuid "69983e9e-0bad-4872-b126-b0e791329d44"
+{:block/uuid #uuid "6999471e-f938-4182-abea-5b129f98b2d1"
 :block/properties 
 {:ls-type :whiteboard-page
 :logseq.tldraw.page 
-{:id "69983e9e-0bad-4872-b126-b0e791329d44"
+{:id "6999471e-f938-4182-abea-5b129f98b2d1"
 :name "map"
 :bindings 
 {:0dd7cb01-0e4e-11f1-a674-d9ce95e7d530 
@@ -727,6 +836,14 @@
 :handleId "end"
 :point [0.16 0.13]
 :distance 4}
+:6defc7f1-0fc9-11f1-bfa5-8f8d48276ae6 
+{:id "6defc7f1-0fc9-11f1-bfa5-8f8d48276ae6"
+:type "line"
+:fromId "c2450590-0e4d-11f1-a674-d9ce95e7d530"
+:toId "b450c960-0e4d-11f1-a674-d9ce95e7d530"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
 :d32b3190-0e4d-11f1-a674-d9ce95e7d530 
 {:id "d32b3190-0e4d-11f1-a674-d9ce95e7d530"
 :type "line"
@@ -777,10 +894,11 @@
 :distance 4}}
 :nonce 1
 :assets []
-:shapes-index ("b450c960-0e4d-11f1-a674-d9ce95e7d530" "bad9c2a0-0e4d-11f1-a674-d9ce95e7d530" "c2450590-0e4d-11f1-a674-d9ce95e7d530" "c8e72c20-0e4d-11f1-a674-d9ce95e7d530" "cad62ae0-0e4d-11f1-a674-d9ce95e7d530" "ce3f4682-0e4d-11f1-a674-d9ce95e7d530" "d32b3192-0e4d-11f1-a674-d9ce95e7d530" "dfc13d52-0e4d-11f1-a674-d9ce95e7d530" "02f9cf80-0e4e-11f1-a674-d9ce95e7d530" "0c2ba1a2-0e4e-11f1-a674-d9ce95e7d530" "10cbddb2-0e4e-11f1-a674-d9ce95e7d530" "19c6e860-0e4e-11f1-a674-d9ce95e7d530" "1e17a4e2-0e4e-11f1-a674-d9ce95e7d530" "31fa9620-0e4e-11f1-a674-d9ce95e7d530" "344cea90-0e4e-11f1-a674-d9ce95e7d530" "4821ab02-0e4e-11f1-a674-d9ce95e7d530" "4a5f3ef2-0e4e-11f1-a674-d9ce95e7d530" "62f5a620-0e4e-11f1-a674-d9ce95e7d530")}}
+:shapes-index ("b450c960-0e4d-11f1-a674-d9ce95e7d530" "bad9c2a0-0e4d-11f1-a674-d9ce95e7d530" "c2450590-0e4d-11f1-a674-d9ce95e7d530" "c8e72c20-0e4d-11f1-a674-d9ce95e7d530" "cad62ae0-0e4d-11f1-a674-d9ce95e7d530" "ce3f4682-0e4d-11f1-a674-d9ce95e7d530" "d32b3192-0e4d-11f1-a674-d9ce95e7d530" "dfc13d52-0e4d-11f1-a674-d9ce95e7d530" "02f9cf80-0e4e-11f1-a674-d9ce95e7d530" "0c2ba1a2-0e4e-11f1-a674-d9ce95e7d530" "10cbddb2-0e4e-11f1-a674-d9ce95e7d530" "19c6e860-0e4e-11f1-a674-d9ce95e7d530" "1e17a4e2-0e4e-11f1-a674-d9ce95e7d530" "31fa9620-0e4e-11f1-a674-d9ce95e7d530" "344cea90-0e4e-11f1-a674-d9ce95e7d530" "4821ab02-0e4e-11f1-a674-d9ce95e7d530" "4a5f3ef2-0e4e-11f1-a674-d9ce95e7d530" "62f5a620-0e4e-11f1-a674-d9ce95e7d530" "f1ec89d0-0fc9-11f1-bfa5-8f8d48276ae6" "d3ab8600-0fca-11f1-bfa5-8f8d48276ae6" "012e1110-0fcb-11f1-bfa5-8f8d48276ae6")}}
 :block/journal? false
-:block/updated-at 1771586549381
+:block/updated-at 1771751427034
 :block/created-at 1771585182120
+:block/format :markdown
 :block/type "whiteboard"
 :block/name "map"
-:block/original-name "Map"})}
+:block/original-name "map"})}
