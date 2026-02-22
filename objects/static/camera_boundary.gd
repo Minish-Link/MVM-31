@@ -26,7 +26,7 @@ extends Node3D
 		top_boundary = value
 		if TOP_RIGHT_BOUNDARY:
 			TOP_RIGHT_BOUNDARY.position.y = value
-
+		#if top_boundary - bottom_boundary < BOUNDARY_MINIMUM_HEIGHT
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	assert(TOP_RIGHT_BOUNDARY.position.x > BOTTOM_LEFT_BOUNDARY.position.x,
