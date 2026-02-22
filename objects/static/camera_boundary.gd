@@ -11,22 +11,38 @@ extends Node3D
 		left_boundary = value
 		if BOTTOM_LEFT_BOUNDARY:
 			BOTTOM_LEFT_BOUNDARY.position.x = value
+		if right_boundary < left_boundary:
+			push_warning("Left Boundary should be to the left of Right Boundary")
+		elif right_boundary - left_boundary < BOUNDARY_MINIMUM_WIDTH:
+			push_warning("Left and Right Boundaries should be at least " + str(BOUNDARY_MINIMUM_WIDTH) + " units apart")
 @export var right_boundary: float = 8.0:
 	set(value):
 		right_boundary = value
 		if TOP_RIGHT_BOUNDARY:
 			TOP_RIGHT_BOUNDARY.position.x = value
+		if right_boundary < left_boundary:
+			push_warning("Right Boundary should be to the right of Left Boundary")
+		elif right_boundary - left_boundary < BOUNDARY_MINIMUM_WIDTH:
+			push_warning("Left and Right Boundaries should be at least " + str(BOUNDARY_MINIMUM_WIDTH) + " units apart")
 @export var bottom_boundary: float = -6.0:
 	set(value):
 		bottom_boundary = value
 		if BOTTOM_LEFT_BOUNDARY:
 			BOTTOM_LEFT_BOUNDARY.position.y = value
+		if top_boundary < bottom_boundary:
+			push_warning("Bottom Boundary should be lower than Top Boundary")
+		elif top_boundary - bottom_boundary < BOUNDARY_MINIMUM_HEIGHT:
+			push_warning("Top and Bottom Boundaries should be at least "+ str(BOUNDARY_MINIMUM_HEIGHT) + " units apart")
 @export var top_boundary: float = 6.0:
 	set(value):
 		top_boundary = value
 		if TOP_RIGHT_BOUNDARY:
 			TOP_RIGHT_BOUNDARY.position.y = value
-		#if top_boundary - bottom_boundary < BOUNDARY_MINIMUM_HEIGHT
+		if top_boundary < bottom_boundary:
+			push_warning("Top Boundary should be higher than Bottom Boundary")
+		elif top_boundary - bottom_boundary < BOUNDARY_MINIMUM_HEIGHT:
+			push_warning("Top and Bottom Boundaries should be at least "+ str(BOUNDARY_MINIMUM_HEIGHT) + " units apart")
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	assert(TOP_RIGHT_BOUNDARY.position.x > BOTTOM_LEFT_BOUNDARY.position.x,
