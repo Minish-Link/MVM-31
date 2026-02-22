@@ -108,6 +108,9 @@ func _handle_attack() -> void:
 		_unbuffer_input("attack")
 
 func _handle_slide() -> void:
+	if not WorldData.has_item("Slide"):
+		return
+	
 	if abs(input_dir.x) < 0.1 or not is_input_buffered("slide"):
 		return
 	

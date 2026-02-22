@@ -1,3 +1,32 @@
 [gd_scene format=3 uid="uid://xsl1vsbfrl51"]
 
-[node name="CameraBoundary" type="Node3D" unique_id=731828375]
+[ext_resource type="Script" uid="uid://chbpy8rju8560" path="res://objects/static/camera_boundary.gd" id="1_7033s"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7033s"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_acdxf"]
+material = SubResource("StandardMaterial3D_7033s")
+radial_segments = 4
+rings = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d36pa"]
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_gnykf"]
+material = SubResource("StandardMaterial3D_d36pa")
+radial_segments = 4
+rings = 1
+
+[node name="CameraBoundary" type="Node3D" unique_id=1830535311 node_paths=PackedStringArray("BOTTOM_LEFT_BOUNDARY", "TOP_RIGHT_BOUNDARY")]
+script = ExtResource("1_7033s")
+BOTTOM_LEFT_BOUNDARY = NodePath("BottomLeft")
+TOP_RIGHT_BOUNDARY = NodePath("TopRight")
+
+[node name="BottomLeft" type="MeshInstance3D" parent="." unique_id=1689219058]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -6, 0)
+mesh = SubResource("SphereMesh_acdxf")
+
+[node name="TopRight" type="MeshInstance3D" parent="." unique_id=666792620]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 6, 0)
+mesh = SubResource("SphereMesh_gnykf")

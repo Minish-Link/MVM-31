@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dptjs67q64i8i" path="res://objects/components/DamageBoxComponent.tscn" id="1_m2onx"]
 [ext_resource type="PackedScene" uid="uid://dwjdbdqpsy1bo" path="res://objects/environment/BreakableObject.tscn" id="2_omjae"]
+[ext_resource type="PackedScene" uid="uid://xsl1vsbfrl51" path="res://objects/static/CameraBoundary.tscn" id="3_aklg6"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_omjae"]
 
@@ -108,3 +109,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 3, 0)
 
 [node name="BreakableObject8" parent="." unique_id=884043914 instance=ExtResource("2_omjae")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 0)
+
+[node name="CameraBoundary" parent="." unique_id=1830535311 instance=ExtResource("3_aklg6")]
