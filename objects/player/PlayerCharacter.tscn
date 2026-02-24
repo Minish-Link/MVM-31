@@ -10,7 +10,15 @@
 [ext_resource type="Script" uid="uid://cb6r57jehqqn4" path="res://objects/player/states/jump.gd" id="6_uqdnk"]
 [ext_resource type="Script" uid="uid://bijm64vqhn2a5" path="res://objects/player/states/slide.gd" id="7_jnw1j"]
 [ext_resource type="Script" uid="uid://chmyiy8snolxa" path="res://objects/player/states/basic_attack.gd" id="8_7t6o0"]
-[ext_resource type="Script" uid="uid://dyfb1akhfnucy" path="res://objects/player/fall.gd" id="9_uqdnk"]
+[ext_resource type="Script" uid="uid://dyfb1akhfnucy" path="res://objects/player/states/fall.gd" id="9_uqdnk"]
+[ext_resource type="Script" uid="uid://b1iimq3u5bij4" path="res://objects/player/states/death.gd" id="10_ceup0"]
+[ext_resource type="Script" uid="uid://db7rf7gyttq0q" path="res://objects/player/states/rest.gd" id="11_kuxqi"]
+[ext_resource type="Script" uid="uid://cssuksfu10fgk" path="res://objects/player/states/void_out.gd" id="12_11qm3"]
+[ext_resource type="Script" uid="uid://cdo2yphyv2ame" path="res://objects/player/states/hack.gd" id="13_76nb4"]
+[ext_resource type="Script" uid="uid://frmdxa32i5jc" path="res://objects/player/states/talk.gd" id="14_28773"]
+[ext_resource type="Script" uid="uid://dxt11slodk5ai" path="res://objects/player/states/grapple.gd" id="15_0ajwu"]
+[ext_resource type="Script" uid="uid://bwnerw0mo0hjj" path="res://objects/player/states/shoot.gd" id="16_4hx4m"]
+[ext_resource type="Script" uid="uid://dohgs4517tf6h" path="res://objects/player/states/hurt.gd" id="17_kuxqi"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ski25"]
 radius = 0.45
@@ -92,6 +100,30 @@ one_shot = true
 [node name="Fall" type="Node" parent="StateMachine" unique_id=805685856 node_paths=PackedStringArray("allowed_exit_states")]
 script = ExtResource("9_uqdnk")
 allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../BasicAttack")]
+
+[node name="Death" type="Node" parent="StateMachine" unique_id=1851708392]
+script = ExtResource("10_ceup0")
+
+[node name="Rest" type="Node" parent="StateMachine" unique_id=1453329594]
+script = ExtResource("11_kuxqi")
+
+[node name="VoidOut" type="Node" parent="StateMachine" unique_id=46147751]
+script = ExtResource("12_11qm3")
+
+[node name="Hack" type="Node" parent="StateMachine" unique_id=1306084150]
+script = ExtResource("13_76nb4")
+
+[node name="Talk" type="Node" parent="StateMachine" unique_id=355519800]
+script = ExtResource("14_28773")
+
+[node name="Grapple" type="Node" parent="StateMachine" unique_id=913928586]
+script = ExtResource("15_0ajwu")
+
+[node name="Shoot" type="Node" parent="StateMachine" unique_id=2141871254]
+script = ExtResource("16_4hx4m")
+
+[node name="Hurt" type="Node" parent="StateMachine" unique_id=550127653]
+script = ExtResource("17_kuxqi")
 
 [node name="HealthComponent" parent="." unique_id=1758599706 instance=ExtResource("5_3n5ai")]
 

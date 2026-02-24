@@ -2,6 +2,7 @@
 	- [[Jump]]
 	- [[Slide]]
 - Partially Implemented
+	- [[Upgrade Modules]]
 - Brainstormed
 	- [[Interface]]
 	- [[Homing Pogo]]

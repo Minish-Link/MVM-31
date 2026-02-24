@@ -4,110 +4,142 @@
 [ext_resource type="PackedScene" uid="uid://dwjdbdqpsy1bo" path="res://objects/environment/BreakableObject.tscn" id="2_omjae"]
 [ext_resource type="PackedScene" uid="uid://xsl1vsbfrl51" path="res://objects/static/CameraBoundary.tscn" id="3_aklg6"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_omjae"]
-
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_m2onx"]
-data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
-
 [sub_resource type="Environment" id="Environment_m2onx"]
 ambient_light_source = 2
 ambient_light_color = Color(1, 1, 1, 1)
 reflected_light_source = 2
+
+[sub_resource type="BoxMesh" id="BoxMesh_omjae"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_m2onx"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_omjae"]
 albedo_color = Color(1, 0, 0, 1)
 
 [node name="TestingLevel" type="Node3D" unique_id=200580513]
 
-[node name="Platform" type="StaticBody3D" parent="." unique_id=564383326]
-transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Platform" unique_id=2142491060]
-mesh = SubResource("BoxMesh_omjae")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform" unique_id=1682878016]
-shape = SubResource("ConcavePolygonShape3D_m2onx")
-
-[node name="Platform6" type="StaticBody3D" parent="." unique_id=1611505610]
-transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 1, 20, -1, 0)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Platform6" unique_id=1808776980]
-mesh = SubResource("BoxMesh_omjae")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform6" unique_id=439290815]
-shape = SubResource("ConcavePolygonShape3D_m2onx")
-
-[node name="Platform7" type="StaticBody3D" parent="." unique_id=548443008]
-transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 1, 32, 1, 0)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Platform7" unique_id=42081401]
-mesh = SubResource("BoxMesh_omjae")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform7" unique_id=732037721]
-shape = SubResource("ConcavePolygonShape3D_m2onx")
-
-[node name="Platform3" type="StaticBody3D" parent="." unique_id=1786579001]
-transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 1, -10, -1, 0)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Platform3" unique_id=1373020274]
-mesh = SubResource("BoxMesh_omjae")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform3" unique_id=1493665202]
-shape = SubResource("ConcavePolygonShape3D_m2onx")
-
-[node name="Platform2" type="StaticBody3D" parent="." unique_id=1338497082]
-transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 1, -4, 3, 0)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Platform2" unique_id=428714298]
-mesh = SubResource("BoxMesh_omjae")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform2" unique_id=2085824519]
-shape = SubResource("ConcavePolygonShape3D_m2onx")
-
-[node name="Platform4" type="StaticBody3D" parent="." unique_id=359143149]
-transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 1, -9, 3, 0)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Platform4" unique_id=1318996608]
-mesh = SubResource("BoxMesh_omjae")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform4" unique_id=999952754]
-shape = SubResource("ConcavePolygonShape3D_m2onx")
-
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1844493325]
 environment = SubResource("Environment_m2onx")
 
-[node name="Platform5" type="StaticBody3D" parent="." unique_id=446651461]
+[node name="CameraBoundary" parent="." unique_id=1830535311 instance=ExtResource("3_aklg6")]
+
+[node name="Terrain" type="Node3D" parent="." unique_id=2003721097]
+
+[node name="Platform" type="StaticBody3D" parent="Terrain" unique_id=564383326]
+transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Terrain/Platform" unique_id=2142491060]
+mesh = SubResource("BoxMesh_omjae")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/Platform" unique_id=1682878016]
+shape = SubResource("ConcavePolygonShape3D_m2onx")
+
+[node name="Platform6" type="StaticBody3D" parent="Terrain" unique_id=1611505610]
+transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 1, 20, -1, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Terrain/Platform6" unique_id=1808776980]
+mesh = SubResource("BoxMesh_omjae")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/Platform6" unique_id=439290815]
+shape = SubResource("ConcavePolygonShape3D_m2onx")
+
+[node name="Platform7" type="StaticBody3D" parent="Terrain" unique_id=548443008]
+transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 1, 32, 1, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Terrain/Platform7" unique_id=42081401]
+mesh = SubResource("BoxMesh_omjae")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/Platform7" unique_id=732037721]
+shape = SubResource("ConcavePolygonShape3D_m2onx")
+
+[node name="Platform3" type="StaticBody3D" parent="Terrain" unique_id=1786579001]
+transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 1, -10, -1, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Terrain/Platform3" unique_id=1373020274]
+mesh = SubResource("BoxMesh_omjae")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/Platform3" unique_id=1493665202]
+shape = SubResource("ConcavePolygonShape3D_m2onx")
+
+[node name="Platform2" type="StaticBody3D" parent="Terrain" unique_id=1338497082]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 1, -6, 3, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Terrain/Platform2" unique_id=428714298]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("BoxMesh_omjae")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/Platform2" unique_id=2085824519]
+shape = SubResource("ConcavePolygonShape3D_m2onx")
+
+[node name="Platform4" type="StaticBody3D" parent="Terrain" unique_id=359143149]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 1, -11, 5, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Terrain/Platform4" unique_id=1318996608]
+mesh = SubResource("BoxMesh_omjae")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/Platform4" unique_id=999952754]
+shape = SubResource("ConcavePolygonShape3D_m2onx")
+
+[node name="Platform11" type="StaticBody3D" parent="Terrain" unique_id=279531364]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 1, -11, -4, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Terrain/Platform11" unique_id=519247341]
+mesh = SubResource("BoxMesh_omjae")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/Platform11" unique_id=1525265629]
+shape = SubResource("ConcavePolygonShape3D_m2onx")
+
+[node name="Platform9" type="StaticBody3D" parent="Terrain" unique_id=701157929]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 1, 6, 9, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Terrain/Platform9" unique_id=744566500]
+mesh = SubResource("BoxMesh_omjae")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/Platform9" unique_id=475916870]
+shape = SubResource("ConcavePolygonShape3D_m2onx")
+
+[node name="Platform10" type="StaticBody3D" parent="Terrain" unique_id=235646663]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 1, -6, -9, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Terrain/Platform10" unique_id=1157265412]
+mesh = SubResource("BoxMesh_omjae")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/Platform10" unique_id=1774925299]
+shape = SubResource("ConcavePolygonShape3D_m2onx")
+
+[node name="Platform5" type="StaticBody3D" parent="Terrain" unique_id=446651461]
 transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 1, 10, -2, 0)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Platform5" unique_id=1489586432]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Terrain/Platform5" unique_id=1489586432]
 mesh = SubResource("BoxMesh_omjae")
 surface_material_override/0 = SubResource("StandardMaterial3D_omjae")
 
-[node name="DamageBoxComponent" parent="Platform5" unique_id=987569012 instance=ExtResource("1_m2onx")]
+[node name="DamageBoxComponent" parent="Terrain/Platform5" unique_id=987569012 instance=ExtResource("1_m2onx")]
 damage = 1000.0
 
-[node name="BreakableObject" parent="." unique_id=762232932 instance=ExtResource("2_omjae")]
+[node name="Objects" type="Node3D" parent="." unique_id=572564167]
+
+[node name="BreakableObject" parent="Objects" unique_id=762232932 instance=ExtResource("2_omjae")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
 
-[node name="BreakableObject2" parent="." unique_id=1926595805 instance=ExtResource("2_omjae")]
+[node name="BreakableObject2" parent="Objects" unique_id=1926595805 instance=ExtResource("2_omjae")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 0)
 
-[node name="BreakableObject3" parent="." unique_id=1245323959 instance=ExtResource("2_omjae")]
+[node name="BreakableObject3" parent="Objects" unique_id=1245323959 instance=ExtResource("2_omjae")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 1, 0)
 
-[node name="BreakableObject4" parent="." unique_id=1716042314 instance=ExtResource("2_omjae")]
+[node name="BreakableObject4" parent="Objects" unique_id=1716042314 instance=ExtResource("2_omjae")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 1, 0)
 
-[node name="BreakableObject5" parent="." unique_id=1792219710 instance=ExtResource("2_omjae")]
+[node name="BreakableObject5" parent="Objects" unique_id=1792219710 instance=ExtResource("2_omjae")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 0)
 
-[node name="BreakableObject6" parent="." unique_id=527642287 instance=ExtResource("2_omjae")]
+[node name="BreakableObject6" parent="Objects" unique_id=527642287 instance=ExtResource("2_omjae")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 6, 0)
 
-[node name="BreakableObject7" parent="." unique_id=330093280 instance=ExtResource("2_omjae")]
+[node name="BreakableObject7" parent="Objects" unique_id=330093280 instance=ExtResource("2_omjae")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 3, 0)
 
-[node name="BreakableObject8" parent="." unique_id=884043914 instance=ExtResource("2_omjae")]
+[node name="BreakableObject8" parent="Objects" unique_id=884043914 instance=ExtResource("2_omjae")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 0)
-
-[node name="CameraBoundary" parent="." unique_id=1830535311 instance=ExtResource("3_aklg6")]

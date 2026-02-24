@@ -1,0 +1,4 @@
+- An upgrade system partly inspired by the charms of HK.
+	- Each character would have a module slot to equip an upgrade module to improve their abilities.
+	- Modules have "colors" that allow them to only be slotted to characters of their respective colors
+	- Modules could have multiple colors, allowing to be slotted to each character that shares a color with it. The effect granted would change based on which characted it's equipped to.
