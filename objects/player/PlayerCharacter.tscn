@@ -19,6 +19,7 @@
 [ext_resource type="Script" uid="uid://dxt11slodk5ai" path="res://objects/player/states/grapple.gd" id="15_0ajwu"]
 [ext_resource type="Script" uid="uid://bwnerw0mo0hjj" path="res://objects/player/states/shoot.gd" id="16_4hx4m"]
 [ext_resource type="Script" uid="uid://dohgs4517tf6h" path="res://objects/player/states/hurt.gd" id="17_kuxqi"]
+[ext_resource type="Script" uid="uid://c7bvm1q0jio3e" path="res://objects/player/player_debug.gd" id="20_11qm3"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ski25"]
 radius = 0.45
@@ -133,3 +134,6 @@ health_component = NodePath("../HealthComponent")
 [node name="WeaponOffset" type="Node3D" parent="." unique_id=1397970258]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.75, 0, 0)
+
+[node name="Node3D" type="Node3D" parent="." unique_id=1848797888]
+script = ExtResource("20_11qm3")

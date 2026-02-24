@@ -23,6 +23,8 @@ albedo_color = Color(1, 0, 0, 1)
 environment = SubResource("Environment_m2onx")
 
 [node name="CameraBoundary" parent="." unique_id=1830535311 instance=ExtResource("3_aklg6")]
+left_boundary = -14.0
+right_boundary = 32.0
 
 [node name="Terrain" type="Node3D" parent="." unique_id=2003721097]
 
@@ -108,15 +110,24 @@ mesh = SubResource("BoxMesh_omjae")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/Platform10" unique_id=1774925299]
 shape = SubResource("ConcavePolygonShape3D_m2onx")
 
-[node name="Platform5" type="StaticBody3D" parent="Terrain" unique_id=446651461]
+[node name="PlatformOfDeath" type="StaticBody3D" parent="Terrain" unique_id=446651461]
 transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 1, 10, -2, 0)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Terrain/Platform5" unique_id=1489586432]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Terrain/PlatformOfDeath" unique_id=1489586432]
 mesh = SubResource("BoxMesh_omjae")
 surface_material_override/0 = SubResource("StandardMaterial3D_omjae")
 
-[node name="DamageBoxComponent" parent="Terrain/Platform5" unique_id=987569012 instance=ExtResource("1_m2onx")]
+[node name="DamageBoxComponent" parent="Terrain/PlatformOfDeath" unique_id=987569012 instance=ExtResource("1_m2onx")]
 damage = 1000.0
+
+[node name="Platform8" type="StaticBody3D" parent="Terrain" unique_id=953497022]
+transform = Transform3D(31.597126, 0, 0, 0, 1, 0, 0, 0, 1, 20, -7.8302817, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Terrain/Platform8" unique_id=1700030677]
+mesh = SubResource("BoxMesh_omjae")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/Platform8" unique_id=266263545]
+shape = SubResource("ConcavePolygonShape3D_m2onx")
 
 [node name="Objects" type="Node3D" parent="." unique_id=572564167]
 
