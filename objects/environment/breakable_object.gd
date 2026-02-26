@@ -6,6 +6,6 @@ extends Node3D
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	if health:
-		health.HealthDepleted.connect(queue_free)
+		health.on_death.connect(queue_free)
 	if hitbox:
 		hitbox.health_component = health

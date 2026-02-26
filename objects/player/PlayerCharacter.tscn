@@ -19,7 +19,8 @@
 [ext_resource type="Script" uid="uid://dxt11slodk5ai" path="res://objects/player/states/grapple.gd" id="15_0ajwu"]
 [ext_resource type="Script" uid="uid://bwnerw0mo0hjj" path="res://objects/player/states/shoot.gd" id="16_4hx4m"]
 [ext_resource type="Script" uid="uid://dohgs4517tf6h" path="res://objects/player/states/hurt.gd" id="17_kuxqi"]
-[ext_resource type="Script" path="res://objects/player/player_debug.gd" id="20_11qm3"]
+[ext_resource type="Script" uid="uid://badexb04ko27r" path="res://objects/player/no_clip.gd" id="18_76nb4"]
+[ext_resource type="Script" uid="uid://c7bvm1q0jio3e" path="res://objects/player/player_debug.gd" id="20_11qm3"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ski25"]
 radius = 0.45
@@ -65,20 +66,20 @@ initial_state = NodePath("Idle")
 
 [node name="Idle" type="Node" parent="StateMachine" unique_id=1202406028 node_paths=PackedStringArray("allowed_exit_states")]
 script = ExtResource("4_2r7dn")
-allowed_exit_states = [NodePath("../BasicAttack"), NodePath("../Slide"), NodePath("../Walk"), NodePath("../Jump"), NodePath("../Fall"), NodePath("../Hurt"), NodePath("../VoidOut"), NodePath("../Death"), NodePath("../Rest"), NodePath("../Hack"), NodePath("../Talk"), NodePath("../Grapple"), NodePath("../Shoot")]
+allowed_exit_states = [NodePath("../BasicAttack"), NodePath("../Slide"), NodePath("../Walk"), NodePath("../Jump"), NodePath("../Fall"), NodePath("../Hurt"), NodePath("../VoidOut"), NodePath("../Death"), NodePath("../Rest"), NodePath("../Hack"), NodePath("../Talk"), NodePath("../Grapple"), NodePath("../Shoot"), NodePath("../NoClip")]
 
 [node name="Walk" type="Node" parent="StateMachine" unique_id=482518256 node_paths=PackedStringArray("allowed_exit_states")]
 script = ExtResource("5_id1qo")
-allowed_exit_states = [NodePath("../Idle"), NodePath("../Jump"), NodePath("../Slide"), NodePath("../BasicAttack"), NodePath("../Fall"), NodePath("../Death"), NodePath("../VoidOut"), NodePath("../Hurt"), NodePath("../Shoot"), NodePath("../Grapple")]
+allowed_exit_states = [NodePath("../Idle"), NodePath("../Jump"), NodePath("../Slide"), NodePath("../BasicAttack"), NodePath("../Fall"), NodePath("../Death"), NodePath("../VoidOut"), NodePath("../Hurt"), NodePath("../Shoot"), NodePath("../Grapple"), NodePath("../NoClip")]
 
 [node name="Jump" type="Node" parent="StateMachine" unique_id=321111278 node_paths=PackedStringArray("allowed_exit_states")]
 script = ExtResource("6_uqdnk")
-allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../Fall"), NodePath("../BasicAttack"), NodePath("../Death"), NodePath("../VoidOut"), NodePath("../Grapple"), NodePath("../Shoot"), NodePath("../Hurt")]
+allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../Fall"), NodePath("../BasicAttack"), NodePath("../Death"), NodePath("../VoidOut"), NodePath("../Grapple"), NodePath("../Shoot"), NodePath("../Hurt"), NodePath("../NoClip")]
 
 [node name="Slide" type="Node" parent="StateMachine" unique_id=2011431557 node_paths=PackedStringArray("allowed_exit_states")]
 script = ExtResource("7_jnw1j")
 SLIDE_ACCELERATION = 2.0
-allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../Jump"), NodePath("../Fall"), NodePath("../Hurt"), NodePath("../VoidOut"), NodePath("../Death")]
+allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../Jump"), NodePath("../Fall"), NodePath("../Hurt"), NodePath("../VoidOut"), NodePath("../Death"), NodePath("../NoClip")]
 
 [node name="BasicAttack" type="Node" parent="StateMachine" unique_id=823881416 node_paths=PackedStringArray("delay_timer", "cooldown_timer", "exit_timer", "allowed_exit_states")]
 script = ExtResource("8_7t6o0")
@@ -87,7 +88,7 @@ ATTACK_DAMAGE = 10.0
 delay_timer = NodePath("DelayTimer")
 cooldown_timer = NodePath("CooldownTimer")
 exit_timer = NodePath("ExitTimer")
-allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../Fall"), NodePath("../Jump"), NodePath("../Hurt"), NodePath("../Death"), NodePath("../VoidOut")]
+allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../Fall"), NodePath("../Jump"), NodePath("../Hurt"), NodePath("../Death"), NodePath("../VoidOut"), NodePath("../NoClip")]
 
 [node name="DelayTimer" type="Timer" parent="StateMachine/BasicAttack" unique_id=1899378193]
 one_shot = true
@@ -100,14 +101,14 @@ one_shot = true
 
 [node name="Fall" type="Node" parent="StateMachine" unique_id=805685856 node_paths=PackedStringArray("allowed_exit_states")]
 script = ExtResource("9_uqdnk")
-allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../BasicAttack"), NodePath("../Death"), NodePath("../VoidOut"), NodePath("../Hurt"), NodePath("../Shoot"), NodePath("../Grapple")]
+allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../BasicAttack"), NodePath("../Death"), NodePath("../VoidOut"), NodePath("../Hurt"), NodePath("../Shoot"), NodePath("../Grapple"), NodePath("../NoClip")]
 
 [node name="Death" type="Node" parent="StateMachine" unique_id=1851708392]
 script = ExtResource("10_ceup0")
 
 [node name="Rest" type="Node" parent="StateMachine" unique_id=1453329594 node_paths=PackedStringArray("allowed_exit_states")]
 script = ExtResource("11_kuxqi")
-allowed_exit_states = [NodePath("../Idle"), NodePath("../Hurt"), NodePath("../VoidOut"), NodePath("../Death")]
+allowed_exit_states = [NodePath("../Idle"), NodePath("../Hurt"), NodePath("../VoidOut"), NodePath("../Death"), NodePath("../NoClip")]
 
 [node name="VoidOut" type="Node" parent="StateMachine" unique_id=46147751 node_paths=PackedStringArray("allowed_exit_states")]
 script = ExtResource("12_11qm3")
@@ -115,22 +116,27 @@ allowed_exit_states = [NodePath("../Idle")]
 
 [node name="Hack" type="Node" parent="StateMachine" unique_id=1306084150 node_paths=PackedStringArray("allowed_exit_states")]
 script = ExtResource("13_76nb4")
-allowed_exit_states = [NodePath("../Idle"), NodePath("../Hurt"), NodePath("../VoidOut"), NodePath("../Death")]
+allowed_exit_states = [NodePath("../Idle"), NodePath("../Hurt"), NodePath("../VoidOut"), NodePath("../Death"), NodePath("../NoClip")]
 
 [node name="Talk" type="Node" parent="StateMachine" unique_id=355519800 node_paths=PackedStringArray("allowed_exit_states")]
 script = ExtResource("14_28773")
-allowed_exit_states = [NodePath("../Idle"), NodePath("../Hurt"), NodePath("../VoidOut"), NodePath("../Death")]
+allowed_exit_states = [NodePath("../Idle"), NodePath("../Hurt"), NodePath("../VoidOut"), NodePath("../Death"), NodePath("../NoClip")]
 
 [node name="Grapple" type="Node" parent="StateMachine" unique_id=913928586 node_paths=PackedStringArray("allowed_exit_states")]
 script = ExtResource("15_0ajwu")
-allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../Jump"), NodePath("../Fall"), NodePath("../Hurt"), NodePath("../VoidOut"), NodePath("../Death")]
+allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../Jump"), NodePath("../Fall"), NodePath("../Hurt"), NodePath("../VoidOut"), NodePath("../Death"), NodePath("../NoClip")]
 
 [node name="Shoot" type="Node" parent="StateMachine" unique_id=2141871254 node_paths=PackedStringArray("allowed_exit_states")]
 script = ExtResource("16_4hx4m")
-allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../Jump"), NodePath("../Fall"), NodePath("../Death"), NodePath("../VoidOut"), NodePath("../Hurt")]
+allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../Jump"), NodePath("../Fall"), NodePath("../Death"), NodePath("../VoidOut"), NodePath("../Hurt"), NodePath("../NoClip")]
 
-[node name="Hurt" type="Node" parent="StateMachine" unique_id=550127653]
+[node name="Hurt" type="Node" parent="StateMachine" unique_id=550127653 node_paths=PackedStringArray("allowed_exit_states")]
 script = ExtResource("17_kuxqi")
+allowed_exit_states = [NodePath("../NoClip"), NodePath("../Idle"), NodePath("../Walk"), NodePath("../Jump"), NodePath("../Fall"), NodePath("../VoidOut"), NodePath("../Death")]
+
+[node name="NoClip" type="Node" parent="StateMachine" unique_id=436181135 node_paths=PackedStringArray("allowed_exit_states")]
+script = ExtResource("18_76nb4")
+allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../Jump"), NodePath("../Fall"), NodePath("../Death"), NodePath("../Hurt"), NodePath("../VoidOut")]
 
 [node name="HealthComponent" parent="." unique_id=1758599706 instance=ExtResource("5_3n5ai")]
 
@@ -141,5 +147,20 @@ health_component = NodePath("../HealthComponent")
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.75, 0, 0)
 
-[node name="Node3D" type="Node3D" parent="." unique_id=1848797888]
+[node name="Debug" type="Node3D" parent="." unique_id=1848797888]
+visible = false
 script = ExtResource("20_11qm3")
+
+[node name="CommandLine" type="LineEdit" parent="Debug" unique_id=982768073]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -31.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 8
+placeholder_text = "enter commands here!"
+
+[connection signal="editing_toggled" from="Debug/CommandLine" to="Debug" method="_on_command_line_editing_toggled"]
+[connection signal="text_submitted" from="Debug/CommandLine" to="Debug" method="_on_line_edit_text_submitted"]

@@ -22,7 +22,6 @@ var coyote_countdown := 0.0
 @export var bufferable_inputs: Array[String]
 var input_buffers: Dictionary[String, Timer]
 
-
 var horizontal_input_allowed := true
 var can_fall := true
 var input_dir := Vector2.ZERO
@@ -30,6 +29,14 @@ var input_dir := Vector2.ZERO
 var facing_dir := 1.0
 
 var can_attack := true
+
+#debug stuff
+var accepting_player_inputs := true
+var noclip_enabled: bool = false:
+	set(value):
+		noclip_enabled = value
+		if noclip_enabled:
+			state_machine.attempt_force_state_change("noclip")
 
 func _ready() -> void:
 	#state_machine.sm_init(self)
@@ -50,6 +57,11 @@ func _ready() -> void:
 		input_buffers[i_name.to_lower()] = new_timer
 
 func _physics_process(delta: float) -> void:
+	if not accepting_player_inputs:
+		return
+	if noclip_enabled:
+		_handle_noclip(delta)
+		return
 	_buffer_all_inputs()
 	_handle_slide()
 	_handle_attack()
@@ -102,6 +114,9 @@ func _handle_horizontal_movement(delta: float):
 	move_and_slide()
 
 func _handle_attack() -> void:
+	if not WorldData.has_item("Attack"):
+		return
+	
 	if not is_input_buffered("attack"):
 		return
 		
@@ -158,3 +173,12 @@ func snap_to_floor() -> void:
 func _on_take_damage(_damage: float) -> void:
 	if _damage > 0:
 		state_machine.attempt_force_state_change("hurt")
+
+func set_collision(enabled: bool = true) -> void:
+	%CollisionShape3D.disabled = not enabled
+
+func _handle_noclip(delta: float) -> void:
+	input_dir = Input.get_vector("move_left", "move_right", "move_up", "move_down")
+	velocity.x = input_dir.x * current_walk_speed * 2
+	velocity.y = -input_dir.y * current_walk_speed * 2
+	move_and_slide()
