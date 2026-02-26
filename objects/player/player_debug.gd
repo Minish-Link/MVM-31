@@ -1,6 +1,10 @@
 extends Node3D
 class_name DebugStuff
 
+func _ready() -> void:
+	if not OS.has_feature("debug"):
+		free()
+
 func _physics_process(delta: float) -> void:
 	_reset_level_command()
 	_give_item()
