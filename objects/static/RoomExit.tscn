@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bxhf2dc246kg3"]
+
+[ext_resource type="Script" uid="uid://c814g6weij7f6" path="res://objects/static/transition_exit.gd" id="1_exgo3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_exgo3"]
+
+[node name="RoomExit" type="Area3D" unique_id=1370284479]
+script = ExtResource("1_exgo3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=733930264]
+shape = SubResource("BoxShape3D_exgo3")

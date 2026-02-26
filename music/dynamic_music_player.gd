@@ -53,8 +53,8 @@ var clips = {
 }
 
 func _on_ready():
-	WorldData.on_region_changed.connect(_on_region_changed)
-	WorldData.on_room_state_changed.connect(_on_room_state_changed)
+	SceneManager.on_region_changed.connect(_on_region_changed)
+	SceneManager.on_room_state_changed.connect(_on_room_state_changed)
 	self.set_stream(music)
 	self.play()
 

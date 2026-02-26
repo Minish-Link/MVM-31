@@ -21,6 +21,7 @@
 [ext_resource type="Script" uid="uid://dohgs4517tf6h" path="res://objects/player/states/hurt.gd" id="17_kuxqi"]
 [ext_resource type="Script" uid="uid://badexb04ko27r" path="res://objects/player/no_clip.gd" id="18_76nb4"]
 [ext_resource type="Script" uid="uid://c7bvm1q0jio3e" path="res://objects/player/player_debug.gd" id="20_11qm3"]
+[ext_resource type="PackedScene" uid="uid://gq4qjmc2vc8a" path="res://levels/testing/test1.tscn" id="22_28773"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ski25"]
 radius = 0.45
@@ -150,6 +151,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.75, 0, 0)
 [node name="Debug" type="Node3D" parent="." unique_id=1848797888]
 visible = false
 script = ExtResource("20_11qm3")
+scen = ExtResource("22_28773")
 
 [node name="CommandLine" type="LineEdit" parent="Debug" unique_id=982768073]
 anchors_preset = 12

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c0ve1uitr4c1o"]
+
+[ext_resource type="Script" uid="uid://yc2m688uloej" path="res://objects/static/transition_entrance.gd" id="1_ir7ot"]
+
+[node name="RoomEntrance" type="Node3D" unique_id=763430562]
+script = ExtResource("1_ir7ot")
