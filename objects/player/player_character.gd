@@ -2,6 +2,7 @@ extends CharacterBody3D
 class_name Player
 
 var state_machine: StateMachine
+var health_component: HealthComponent
 
 @export_category("Basic Movement")
 @export var WALK_SPEED := 5.0
@@ -34,6 +35,10 @@ func _ready() -> void:
 	#state_machine.sm_init(self)
 	state_machine = get_node("StateMachine")
 	state_machine.sm_init(self)
+	
+	health_component = get_node("HealthComponent")
+	health_component.on_damaged.connect(_on_take_damage)
+	
 	current_walk_speed = WALK_SPEED
 	
 	for i_name in bufferable_inputs:
@@ -146,3 +151,10 @@ func get_next_move_state() -> String:
 		return "walk"
 	else:
 		return "idle"
+
+func snap_to_floor() -> void:
+	pass
+
+func _on_take_damage(_damage: float) -> void:
+	if _damage > 0:
+		state_machine.attempt_force_state_change("hurt")

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" format=3 uid="uid://b8lp4lr87miyg"]
+
+[ext_resource type="Script" uid="uid://b3f0t4y27gbpb" path="res://objects/modulechips/module_effects/power_chip/power_chip_a.gd" id="1_cuxvv"]
+
+[resource]
+resource_name = "PowerChipA"
+script = ExtResource("1_cuxvv")
+metadata/_custom_type_script = "uid://dkpobeikgdjfx"

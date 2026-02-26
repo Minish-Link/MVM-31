@@ -3,10 +3,13 @@ class_name ModuleCollection
 
 var collection: Array[MultiChip]
 
-func modify_attack(attack: AttackData) -> AttackData:
+func modify_attack(attack: DamageBoxComponent) -> void:
 	for chip in collection:
-		attack = chip.modify_attack(attack)
-	return attack
+		chip.modify_attack(attack)
+
+func modify_projectile(projectile: DamageBoxComponent) -> void:
+	for chip in collection:
+		chip.modify_projectile(projectile)
 
 func _process(delta: float) -> void:
 	for chip in collection:

@@ -1,6 +1,8 @@
 extends Node
 class_name MultiChip
 
+@export var upgrade_name = "<Upgrade Name Here>"
+
 @export var upgrade_modules: Array[UpgradeModule]
 var module_colors: Dictionary[String, UpgradeModule]
 var current_module: UpgradeModule
@@ -47,13 +49,12 @@ func physics_update(delta: float) -> void:
 	if current_module:
 		current_module._physics_update( delta)
 
-func modify_attack(attack: AttackData) -> AttackData:
-	if not current_module:
-		return attack
-	return current_module._modify_attack(attack)
-
-func modify_projectile() -> void:
-	# TODO
+func modify_attack(attack: DamageBoxComponent) -> void:
 	if not current_module:
 		return
-	current_module._modify_projectile()
+	current_module._modify_attack(attack)
+
+func modify_projectile(projectile: DamageBoxComponent) -> void:
+	if not current_module:
+		return
+	current_module._modify_projectile(projectile)

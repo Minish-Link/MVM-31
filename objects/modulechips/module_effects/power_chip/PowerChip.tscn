@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://d3ylb7i0cmo0i"]
+
+[ext_resource type="Script" uid="uid://baqblq8lx37on" path="res://objects/modulechips/multichip.gd" id="1_px1wh"]
+[ext_resource type="Script" uid="uid://dkpobeikgdjfx" path="res://objects/modulechips/upgrade_module.gd" id="2_t58dx"]
+
+[node name="PowerChip" type="Node" unique_id=27816631]
+script = ExtResource("1_px1wh")
+upgrade_modules = Array[ExtResource("2_t58dx")]([null])
+metadata/_custom_type_script = "uid://baqblq8lx37on"

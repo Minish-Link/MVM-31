@@ -1,16 +1,16 @@
-@abstract
 extends Resource
 class_name UpgradeModule
 
 @export var color : String = ""
+@export var description: String = "<Description Here>"
 
 ## Gets called everytime a projectile attack is created. Returns the modified projectile
-func _modify_projectile() -> void:
+func _modify_projectile(projectile: DamageBoxComponent) -> void:
 	pass
 
 ## Gets called everytime a melee attack is created
-func _modify_attack(attack: AttackData) -> AttackData:
-	return attack
+func _modify_attack(attack: DamageBoxComponent) -> void:
+	pass
 
 ## Gets called when the module is equipped
 func _on_equip() -> void:
