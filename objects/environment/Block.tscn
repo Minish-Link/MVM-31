@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://24q3kdv1yw2u"]
+
+[ext_resource type="Texture2D" uid="uid://bt1ypvg3mkkrw" path="res://textures/placeholder/Block.png" id="1_2hycx"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_0pd2q"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2hycx"]
+albedo_texture = ExtResource("1_2hycx")
+uv1_offset = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+uv1_world_triplanar = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uevyw"]
+
+[node name="Block" type="MeshInstance3D" unique_id=789436918]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("BoxMesh_0pd2q")
+surface_material_override/0 = SubResource("StandardMaterial3D_2hycx")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=65240582]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1461654755]
+shape = SubResource("BoxShape3D_uevyw")

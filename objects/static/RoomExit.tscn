@@ -1,11 +1,29 @@
 [gd_scene format=3 uid="uid://bxhf2dc246kg3"]
 
-[ext_resource type="Script" uid="uid://c814g6weij7f6" path="res://objects/static/transition_exit.gd" id="1_exgo3"]
+[ext_resource type="Texture2D" uid="uid://bt1ypvg3mkkrw" path="res://textures/placeholder/Block.png" id="1_d8em6"]
+[ext_resource type="Script" uid="uid://c814g6weij7f6" path="res://objects/static/room_exit.gd" id="1_exgo3"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_exgo3"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_d8em6"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_32cqd"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6p105"]
+albedo_texture = ExtResource("1_d8em6")
+emission_enabled = true
+emission = Color(0.49803922, 0, 0, 1)
+uv1_offset = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+uv1_world_triplanar = true
 
 [node name="RoomExit" type="Area3D" unique_id=1370284479]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 1, 0, 0, 0)
 script = ExtResource("1_exgo3")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=733930264]
-shape = SubResource("BoxShape3D_exgo3")
+shape = SubResource("BoxShape3D_d8em6")
+
+[node name="EditorDisplay" type="MeshInstance3D" parent="." unique_id=459642874]
+mesh = SubResource("BoxMesh_32cqd")
+surface_material_override/0 = SubResource("StandardMaterial3D_6p105")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

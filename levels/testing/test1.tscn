@@ -3,6 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://dptjs67q64i8i" path="res://objects/components/DamageBoxComponent.tscn" id="1_m2onx"]
 [ext_resource type="PackedScene" uid="uid://dwjdbdqpsy1bo" path="res://objects/environment/BreakableObject.tscn" id="2_omjae"]
 [ext_resource type="PackedScene" uid="uid://xsl1vsbfrl51" path="res://objects/static/CameraBoundary.tscn" id="3_aklg6"]
+[ext_resource type="PackedScene" uid="uid://c1yhjjmhit3m6" path="res://objects/static/RoomData.tscn" id="4_07egl"]
+[ext_resource type="PackedScene" uid="uid://bxhf2dc246kg3" path="res://objects/static/RoomExit.tscn" id="5_iplyw"]
+[ext_resource type="PackedScene" uid="uid://c0ve1uitr4c1o" path="res://objects/static/RoomEntrance.tscn" id="5_seps5"]
 
 [sub_resource type="Environment" id="Environment_m2onx"]
 ambient_light_source = 2
@@ -23,7 +26,7 @@ albedo_color = Color(1, 0, 0, 1)
 environment = SubResource("Environment_m2onx")
 
 [node name="CameraBoundary" parent="." unique_id=1830535311 instance=ExtResource("3_aklg6")]
-left_boundary = -14.0
+left_boundary = -8.0
 right_boundary = 32.0
 
 [node name="Terrain" type="Node3D" parent="." unique_id=2003721097]
@@ -65,17 +68,18 @@ mesh = SubResource("BoxMesh_omjae")
 shape = SubResource("ConcavePolygonShape3D_m2onx")
 
 [node name="Platform2" type="StaticBody3D" parent="Terrain" unique_id=1338497082]
-transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 1, -6, 3, 0)
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 1, -6, 5, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Terrain/Platform2" unique_id=428714298]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("BoxMesh_omjae")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/Platform2" unique_id=2085824519]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_m2onx")
 
 [node name="Platform4" type="StaticBody3D" parent="Terrain" unique_id=359143149]
-transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 1, -11, 5, 0)
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 1, -11, 6, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Terrain/Platform4" unique_id=1318996608]
 mesh = SubResource("BoxMesh_omjae")
@@ -154,3 +158,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 3, 0)
 
 [node name="BreakableObject8" parent="Objects" unique_id=884043914 instance=ExtResource("2_omjae")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 0)
+
+[node name="RoomData" parent="." unique_id=1310900475 instance=ExtResource("4_07egl")]
+room_name = "Testing1"
+
+[node name="RoomEntrance" parent="RoomData" index="0" unique_id=763430562]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7779713, 1.1713164, 0)
+
+[node name="RoomEntrance2" parent="RoomData" unique_id=1319631373 instance=ExtResource("5_seps5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.2220287, 1.1713164, 0)
+door_id = 1
+
+[node name="RoomExit" parent="RoomData" unique_id=1370284479 instance=ExtResource("5_iplyw")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 1, -9, 1, 0)
+leads_to_scene = null
+leads_to_path = "res://levels/testing/test2.tscn"
+door_id = 1
+
+[editable path="RoomData"]

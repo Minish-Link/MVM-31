@@ -174,10 +174,18 @@ func _on_take_damage(_damage: float) -> void:
 	if _damage > 0:
 		state_machine.attempt_force_state_change("hurt")
 
+## TODO
+func prepare_for_room_transition() -> void:
+	pass
+
+# -----
+# Debug
+# -----
+
 func set_collision(enabled: bool = true) -> void:
 	%CollisionShape3D.disabled = not enabled
 
-func _handle_noclip(delta: float) -> void:
+func _handle_noclip(_delta: float) -> void:
 	input_dir = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	velocity.x = input_dir.x * current_walk_speed * 2
 	velocity.y = -input_dir.y * current_walk_speed * 2

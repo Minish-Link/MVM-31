@@ -45,6 +45,8 @@ extends Node3D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	if OS.has_feature("editor_hint"):
+		return
 	assert(TOP_RIGHT_BOUNDARY.position.x > BOTTOM_LEFT_BOUNDARY.position.x,
 	"Right Camera Boundary must be to the right of the Left Camera Boundary")
 	assert(TOP_RIGHT_BOUNDARY.position.y > BOTTOM_LEFT_BOUNDARY.position.y,

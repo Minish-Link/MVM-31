@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://dtss5emglurnd"]
+
+[ext_resource type="PackedScene" uid="uid://c1yhjjmhit3m6" path="res://objects/static/RoomData.tscn" id="1_myoup"]
+[ext_resource type="PackedScene" uid="uid://24q3kdv1yw2u" path="res://objects/environment/Block.tscn" id="2_207yg"]
+[ext_resource type="PackedScene" uid="uid://xsl1vsbfrl51" path="res://objects/static/CameraBoundary.tscn" id="3_aqrxv"]
+
+[sub_resource type="Environment" id="Environment_aqrxv"]
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+reflected_light_source = 2
+
+[node name="Room" type="Node3D" unique_id=441597396]
+
+[node name="RoomData" parent="." unique_id=1310900475 instance=ExtResource("1_myoup")]
+
+[node name="Platforms" type="Node" parent="." unique_id=1711539813]
+
+[node name="Block" parent="Platforms" unique_id=789436918 instance=ExtResource("2_207yg")]
+transform = Transform3D(4.9999995, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
+
+[node name="EnvironmentDetails" type="Node" parent="." unique_id=999045170]
+
+[node name="Enemies" type="Node" parent="." unique_id=1779168450]
+
+[node name="Hazards" type="Node" parent="." unique_id=841042050]
+
+[node name="Interactables" type="Node" parent="." unique_id=2009617795]
+
+[node name="MiscObjects" type="Node" parent="." unique_id=691984444]
+
+[node name="CameraBoundary" parent="." unique_id=1830535311 instance=ExtResource("3_aqrxv")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=237840102]
+environment = SubResource("Environment_aqrxv")
+
+[editable path="RoomData"]
