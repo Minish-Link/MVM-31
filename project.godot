@@ -27,6 +27,10 @@ SceneManager="*uid://bl42peu3hw5xx"
 
 project/assembly_name="MVM-31"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/TileMapLayer3D/plugin.cfg")
+
 [input]
 
 move_left={

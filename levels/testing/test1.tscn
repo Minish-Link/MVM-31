@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://c1yhjjmhit3m6" path="res://objects/static/RoomData.tscn" id="4_07egl"]
 [ext_resource type="PackedScene" uid="uid://bxhf2dc246kg3" path="res://objects/static/RoomExit.tscn" id="5_iplyw"]
 [ext_resource type="PackedScene" uid="uid://c0ve1uitr4c1o" path="res://objects/static/RoomEntrance.tscn" id="5_seps5"]
+[ext_resource type="Script" uid="uid://4kv8f8ejgwqn" path="res://addons/TileMapLayer3D/nodes/tilemap_layer_3d.gd" id="7_wlroc"]
+[ext_resource type="Script" uid="uid://bli432i5uj51v" path="res://addons/TileMapLayer3D/core/tile_creation_placement/tilemap_layer_settings.gd" id="8_m5vnm"]
 
 [sub_resource type="Environment" id="Environment_m2onx"]
 ambient_light_source = 2
@@ -19,6 +21,9 @@ data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_omjae"]
 albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_e63kq"]
+script = ExtResource("8_m5vnm")
 
 [node name="TestingLevel" type="Node3D" unique_id=200580513]
 
@@ -171,8 +176,19 @@ door_id = 1
 
 [node name="RoomExit" parent="RoomData" unique_id=1370284479 instance=ExtResource("5_iplyw")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 1, -9, 1, 0)
-leads_to_scene = null
 leads_to_path = "res://levels/testing/test2.tscn"
 door_id = 1
+
+[node name="Backgrounds" type="Node" parent="." unique_id=421242329]
+
+[node name="TileMapLayer3D" type="Node3D" parent="Backgrounds" unique_id=2143557397]
+script = ExtResource("7_wlroc")
+settings = SubResource("Resource_e63kq")
+_tile_positions = PackedVector3Array()
+_tile_uv_rects = PackedFloat32Array()
+_tile_flags = PackedInt32Array()
+_tile_transform_indices = PackedInt32Array()
+_tile_transform_data = PackedFloat32Array()
+metadata/_custom_type_script = "uid://4kv8f8ejgwqn"
 
 [editable path="RoomData"]
