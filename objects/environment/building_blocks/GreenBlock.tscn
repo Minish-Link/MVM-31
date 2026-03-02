@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dfrb2y0v88ka4"]
+
+[ext_resource type="PackedScene" uid="uid://24q3kdv1yw2u" path="res://objects/environment/building_blocks/WhiteBlock.tscn" id="1_cx3t7"]
+[ext_resource type="Texture2D" uid="uid://bt1ypvg3mkkrw" path="res://textures/placeholder/Block.png" id="2_lbd2j"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rhrwb"]
+albedo_color = Color(0, 1, 0, 1)
+albedo_texture = ExtResource("2_lbd2j")
+uv1_offset = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+uv1_world_triplanar = true
+
+[node name="Block" unique_id=789436918 instance=ExtResource("1_cx3t7")]
+surface_material_override/0 = SubResource("StandardMaterial3D_rhrwb")

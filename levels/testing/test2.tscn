@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ddb2clh8fm4cc"]
 
 [ext_resource type="PackedScene" uid="uid://dtss5emglurnd" path="res://levels/RoomTemplate.tscn" id="1_wtaw1"]
-[ext_resource type="PackedScene" uid="uid://24q3kdv1yw2u" path="res://objects/environment/Block.tscn" id="2_8kdnj"]
+[ext_resource type="PackedScene" uid="uid://24q3kdv1yw2u" path="res://objects/environment/building_blocks/WhiteBlock.tscn" id="2_8kdnj"]
 [ext_resource type="PackedScene" uid="uid://c0ve1uitr4c1o" path="res://objects/static/RoomEntrance.tscn" id="2_xctff"]
 [ext_resource type="PackedScene" uid="uid://bxhf2dc246kg3" path="res://objects/static/RoomExit.tscn" id="3_i4oay"]
 
@@ -20,35 +20,32 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 1, 12, 3, 0)
 leads_to_path = "res://levels/testing/test1.tscn"
 door_id = 1
 
-[node name="Block" parent="Platforms" parent_id_path=PackedInt32Array(1711539813) index="0" unique_id=789436918]
-transform = Transform3D(35, 0, 0, 0, 5, 0, 0, 0, 1, -12, -4, 0)
+[node name="Block" parent="Platforms" parent_id_path=PackedInt32Array(557602217) index="0" unique_id=789436918]
+transform = Transform3D(35, 0, 0, 0, 5, 0, 0, 0, 11, -12, -4, -5)
 
-[node name="JumpHeight" parent="Platforms" parent_id_path=PackedInt32Array(1711539813) index="1" unique_id=400760716 instance=ExtResource("2_8kdnj")]
+[node name="JumpHeight" parent="Platforms" parent_id_path=PackedInt32Array(557602217) index="1" unique_id=400760716 instance=ExtResource("2_8kdnj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -1, 0)
 
-[node name="JumpHeight2" parent="Platforms" parent_id_path=PackedInt32Array(1711539813) index="2" unique_id=397529785 instance=ExtResource("2_8kdnj")]
+[node name="JumpHeight2" parent="Platforms" parent_id_path=PackedInt32Array(557602217) index="2" unique_id=397529785 instance=ExtResource("2_8kdnj")]
 transform = Transform3D(1, 0, 0, 0, 3, 0, 0, 0, 1, -9, 0, 0)
 
-[node name="JumpHeight5" parent="Platforms" parent_id_path=PackedInt32Array(1711539813) index="3" unique_id=2021413812 instance=ExtResource("2_8kdnj")]
+[node name="JumpHeight5" parent="Platforms" parent_id_path=PackedInt32Array(557602217) index="3" unique_id=2021413812 instance=ExtResource("2_8kdnj")]
 transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -6, -0.5, 0)
 
-[node name="JumpHeight6" parent="Platforms" parent_id_path=PackedInt32Array(1711539813) index="4" unique_id=1691406177 instance=ExtResource("2_8kdnj")]
+[node name="JumpHeight6" parent="Platforms" parent_id_path=PackedInt32Array(557602217) index="4" unique_id=1691406177 instance=ExtResource("2_8kdnj")]
 transform = Transform3D(1, 0, 0, 0, 4, 0, 0, 0, 1, -12, 0.5, 0)
 
-[node name="JumpHeight3" parent="Platforms" parent_id_path=PackedInt32Array(1711539813) index="5" unique_id=424871892 instance=ExtResource("2_8kdnj")]
+[node name="JumpHeight3" parent="Platforms" parent_id_path=PackedInt32Array(557602217) index="5" unique_id=424871892 instance=ExtResource("2_8kdnj")]
 transform = Transform3D(1, 0, 0, 0, 5, 0, 0, 0, 1, -15, 1, 0)
 
-[node name="Block2" parent="Platforms" parent_id_path=PackedInt32Array(1711539813) index="6" unique_id=1295836092 instance=ExtResource("2_8kdnj")]
+[node name="Block2" parent="Platforms" parent_id_path=PackedInt32Array(557602217) index="6" unique_id=1295836092 instance=ExtResource("2_8kdnj")]
 transform = Transform3D(9, 0, 0, 0, 5, 0, 0, 0, 1, 10, -1, 0)
 
-[node name="Block3" parent="Platforms" parent_id_path=PackedInt32Array(1711539813) index="7" unique_id=1811446352 instance=ExtResource("2_8kdnj")]
+[node name="Block3" parent="Platforms" parent_id_path=PackedInt32Array(557602217) index="7" unique_id=1811446352 instance=ExtResource("2_8kdnj")]
 transform = Transform3D(7, 0, 0, 0, 5, 0, 0, 0, 1, 11, 7, 0)
 
 [node name="CameraBoundary" parent="." index="7" unique_id=1830535311]
 left_boundary = -36.0
 right_boundary = 11.0
-
-[node name="GroundTileLayer" parent="." index="10" unique_id=671990186 node_paths=PackedStringArray("_quad_chunks")]
-_quad_chunks = [NodePath("SquareChunk_R-1_0_0_C0"), NodePath("SquareChunk_R0_0_0_C0")]
 
 [editable path="RoomData"]
