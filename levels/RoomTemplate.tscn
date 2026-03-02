@@ -3,11 +3,21 @@
 [ext_resource type="PackedScene" uid="uid://c1yhjjmhit3m6" path="res://objects/static/RoomData.tscn" id="1_myoup"]
 [ext_resource type="PackedScene" uid="uid://24q3kdv1yw2u" path="res://objects/environment/Block.tscn" id="2_207yg"]
 [ext_resource type="PackedScene" uid="uid://xsl1vsbfrl51" path="res://objects/static/CameraBoundary.tscn" id="3_aqrxv"]
+[ext_resource type="Texture2D" uid="uid://bwy6on3nn084g" path="res://backgrounds/gasgiant.png" id="4_sa826"]
+[ext_resource type="Texture2D" uid="uid://chui7jncltdi3" path="res://backgrounds/starfield.png" id="5_boqnm"]
 
 [sub_resource type="Environment" id="Environment_aqrxv"]
 ambient_light_source = 2
 ambient_light_color = Color(1, 1, 1, 1)
 reflected_light_source = 2
+
+[sub_resource type="QuadMesh" id="QuadMesh_atod5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xo63u"]
+albedo_texture = ExtResource("5_boqnm")
+uv1_scale = Vector3(0.002, 0.002, 0.002)
+uv1_triplanar = true
+uv1_world_triplanar = true
 
 [node name="Room" type="Node3D" unique_id=441597396]
 
@@ -32,5 +42,16 @@ transform = Transform3D(4.9999995, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=237840102]
 environment = SubResource("Environment_aqrxv")
+
+[node name="Backgrounds" type="Node" parent="." unique_id=1152106950]
+
+[node name="Planet" type="Sprite3D" parent="Backgrounds" unique_id=1828761834]
+transform = Transform3D(300, 0, 0, 0, 300, 0, 0, 0, 300, 200, -300, -1000)
+texture = ExtResource("4_sa826")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Backgrounds" unique_id=691414013]
+transform = Transform3D(5000, 0, 0, 0, 2000, 0, 0, 0, 1, 0, 0, -1200)
+mesh = SubResource("QuadMesh_atod5")
+surface_material_override/0 = SubResource("StandardMaterial3D_xo63u")
 
 [editable path="RoomData"]

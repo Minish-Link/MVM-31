@@ -6,8 +6,11 @@
 [ext_resource type="PackedScene" uid="uid://c1yhjjmhit3m6" path="res://objects/static/RoomData.tscn" id="4_07egl"]
 [ext_resource type="PackedScene" uid="uid://bxhf2dc246kg3" path="res://objects/static/RoomExit.tscn" id="5_iplyw"]
 [ext_resource type="PackedScene" uid="uid://c0ve1uitr4c1o" path="res://objects/static/RoomEntrance.tscn" id="5_seps5"]
+[ext_resource type="Texture2D" uid="uid://bwy6on3nn084g" path="res://backgrounds/gasgiant.png" id="7_iioca"]
 [ext_resource type="Script" uid="uid://4kv8f8ejgwqn" path="res://addons/TileMapLayer3D/nodes/tilemap_layer_3d.gd" id="7_wlroc"]
 [ext_resource type="Script" uid="uid://bli432i5uj51v" path="res://addons/TileMapLayer3D/core/tile_creation_placement/tilemap_layer_settings.gd" id="8_m5vnm"]
+[ext_resource type="Texture2D" uid="uid://chui7jncltdi3" path="res://backgrounds/starfield.png" id="8_wlroc"]
+[ext_resource type="Texture2D" uid="uid://jv0ceovbnduw" path="res://tilesets/Tileset1.png" id="11_nv8ka"]
 
 [sub_resource type="Environment" id="Environment_m2onx"]
 ambient_light_source = 2
@@ -22,8 +25,19 @@ data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_omjae"]
 albedo_color = Color(1, 0, 0, 1)
 
+[sub_resource type="QuadMesh" id="QuadMesh_wlroc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m5vnm"]
+albedo_texture = ExtResource("8_wlroc")
+uv1_scale = Vector3(0.002, 0.002, 0.002)
+uv1_triplanar = true
+uv1_world_triplanar = true
+
 [sub_resource type="Resource" id="Resource_e63kq"]
 script = ExtResource("8_m5vnm")
+tileset_texture = ExtResource("11_nv8ka")
+selected_tile_uv = Rect2(192, 0, 32, 32)
+grid_snap_size = 0.5
 
 [node name="TestingLevel" type="Node3D" unique_id=200580513]
 
@@ -181,7 +195,16 @@ door_id = 1
 
 [node name="Backgrounds" type="Node" parent="." unique_id=421242329]
 
-[node name="TileMapLayer3D" type="Node3D" parent="Backgrounds" unique_id=2143557397]
+[node name="Planet" type="Sprite3D" parent="Backgrounds" unique_id=542092370]
+transform = Transform3D(300, 0, 0, 0, 300, 0, 0, 0, 300, 200, -300, -1000)
+texture = ExtResource("7_iioca")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Backgrounds" unique_id=412680625]
+transform = Transform3D(5000, 0, 0, 0, 2000, 0, 0, 0, 1, 0, 0, -1200)
+mesh = SubResource("QuadMesh_wlroc")
+surface_material_override/0 = SubResource("StandardMaterial3D_m5vnm")
+
+[node name="TileMapLayer3D" type="Node3D" parent="Backgrounds" unique_id=490016468]
 script = ExtResource("7_wlroc")
 settings = SubResource("Resource_e63kq")
 _tile_positions = PackedVector3Array()

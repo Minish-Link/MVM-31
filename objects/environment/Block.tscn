@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://24q3kdv1yw2u"]
 
 [ext_resource type="Texture2D" uid="uid://bt1ypvg3mkkrw" path="res://textures/placeholder/Block.png" id="1_2hycx"]
+[ext_resource type="Script" uid="uid://dvawvq7fj72gk" path="res://objects/environment/building_block.gd" id="2_uevyw"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_0pd2q"]
 
@@ -16,6 +17,7 @@ uv1_world_triplanar = true
 transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("BoxMesh_0pd2q")
 surface_material_override/0 = SubResource("StandardMaterial3D_2hycx")
+script = ExtResource("2_uevyw")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=65240582]
 
