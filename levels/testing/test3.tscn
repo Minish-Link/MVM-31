@@ -1,7 +1,47 @@
 [gd_scene format=3 uid="uid://j5gj2i6oweqf"]
 
 [ext_resource type="PackedScene" uid="uid://dtss5emglurnd" path="res://levels/RoomTemplate.tscn" id="1_v7vcr"]
+[ext_resource type="PackedScene" uid="uid://bxhf2dc246kg3" path="res://objects/static/RoomExit.tscn" id="2_21vel"]
+[ext_resource type="PackedScene" uid="uid://24q3kdv1yw2u" path="res://objects/environment/building_blocks/WhiteBlock.tscn" id="3_55nmg"]
 
 [node name="Room" unique_id=441597396 instance=ExtResource("1_v7vcr")]
+
+[node name="RoomData" parent="." index="0" unique_id=1310900475]
+room_name = "Test Room 3"
+
+[node name="RoomEntrance" parent="RoomData" index="0" unique_id=763430562]
+door_id = 1
+
+[node name="RoomExit" parent="RoomData" index="1" unique_id=1370284479 instance=ExtResource("2_21vel")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 1, 4.016746, 0.017861605, 0)
+leads_to_path = "res://levels/testing/test1.tscn"
+door_id = 2
+
+[node name="Block2" parent="Platforms" parent_id_path=PackedInt32Array(557602217) index="1" unique_id=789436918 instance=ExtResource("3_55nmg")]
+transform = Transform3D(100, 0, 0, 0, 1, 0, 0, 0, 1, -57, -2, 0)
+
+[node name="Block3" parent="Platforms" parent_id_path=PackedInt32Array(557602217) index="2" unique_id=87539709 instance=ExtResource("3_55nmg")]
+transform = Transform3D(4.9999995, 0, 0, 0, 1, 0, 0, 0, 1, -5, -2, 0)
+
+[node name="Block5" parent="Platforms" parent_id_path=PackedInt32Array(557602217) index="3" unique_id=440152353 instance=ExtResource("3_55nmg")]
+transform = Transform3D(4.9999995, 0, 0, 0, 1, 0, 0, 0, 1, -96.979675, 1, 0)
+
+[node name="Block6" parent="Platforms" parent_id_path=PackedInt32Array(557602217) index="4" unique_id=1790414160 instance=ExtResource("3_55nmg")]
+transform = Transform3D(4.9999995, 0, 0, 0, 1, 0, 0, 0, 1, -90.979675, 4, 0)
+
+[node name="Block7" parent="Platforms" parent_id_path=PackedInt32Array(557602217) index="5" unique_id=347149999 instance=ExtResource("3_55nmg")]
+transform = Transform3D(4.9999995, 0, 0, 0, 1, 0, 0, 0, 1, -99.979675, 7, 0)
+
+[node name="Block8" parent="Platforms" parent_id_path=PackedInt32Array(557602217) index="6" unique_id=83295398 instance=ExtResource("3_55nmg")]
+transform = Transform3D(4.9999995, 0, 0, 0, 1, 0, 0, 0, 1, -108.979675, 8, 0)
+
+[node name="Block9" parent="Platforms" parent_id_path=PackedInt32Array(557602217) index="7" unique_id=929630853 instance=ExtResource("3_55nmg")]
+transform = Transform3D(4.9999995, 0, 0, 0, 1, 0, 0, 0, 1, -126.479675, 8, 0)
+
+[node name="Block10" parent="Platforms" parent_id_path=PackedInt32Array(557602217) index="8" unique_id=835398342 instance=ExtResource("3_55nmg")]
+transform = Transform3D(20, 0, 0, 0, 1, 0, 0, 0, 1, -122.145424, -2, 0)
+
+[node name="Block4" parent="Platforms" parent_id_path=PackedInt32Array(557602217) index="9" unique_id=631174609 instance=ExtResource("3_55nmg")]
+transform = Transform3D(1, 0, 0, 0, 10, 0, 0, 0, 1, -107, 3.5, 0)
 
 [editable path="RoomData"]
