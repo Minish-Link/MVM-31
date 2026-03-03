@@ -193,6 +193,15 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 1, -9, 1, 0)
 leads_to_path = "res://levels/testing/test2.tscn"
 door_id = 1
 
+[node name="RoomExit2" parent="RoomData" unique_id=1057791218 instance=ExtResource("5_iplyw")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 1, 35.393414, 3.073646, 0)
+leads_to_path = "res://levels/testing/test3.tscn"
+door_id = 1
+
+[node name="RoomEntrance3" parent="RoomData" unique_id=293805710 instance=ExtResource("5_seps5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.794548, 2.4696019, 0)
+door_id = 2
+
 [node name="Backgrounds" type="Node" parent="." unique_id=421242329]
 
 [node name="Planet" type="Sprite3D" parent="Backgrounds" unique_id=542092370]
