@@ -165,6 +165,10 @@ special_2={
 ]
 }
 
+[layer_names]
+
+3d_physics/layer_5="enemies"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
