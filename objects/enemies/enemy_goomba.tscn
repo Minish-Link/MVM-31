@@ -6,14 +6,14 @@
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2itfb"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_lujkf"]
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_yy2fk"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pmynu"]
-albedo_color = Color(0.3372549, 0.19607843, 0, 1)
+albedo_color = Color(4.3315187, 0, 0, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_p1uvk"]
 
-[node name="BreakableObject" type="StaticBody3D" unique_id=1926595805 node_paths=PackedStringArray("hitbox", "health")]
+[node name="enemy_goomba" type="CharacterBody3D" unique_id=1069603660 node_paths=PackedStringArray("hitbox", "health")]
 script = ExtResource("1_56isg")
 hitbox = NodePath("HitboxComponent")
 health = NodePath("HealthComponent")
@@ -28,7 +28,8 @@ health_component = NodePath("../HealthComponent")
 shape = SubResource("BoxShape3D_2itfb")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=505126518]
-mesh = SubResource("BoxMesh_lujkf")
+transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("CapsuleMesh_yy2fk")
 surface_material_override/0 = SubResource("StandardMaterial3D_pmynu")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1528076430]
