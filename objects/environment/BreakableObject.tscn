@@ -1,21 +1,19 @@
 [gd_scene format=3 uid="uid://dwjdbdqpsy1bo"]
 
-[ext_resource type="Script" uid="uid://vyfcbi1ynkya" path="res://objects/enemies/enemy_goomba.gd" id="1_p1uvk"]
+[ext_resource type="Script" uid="uid://bwy8v6o66fsup" path="res://objects/environment/breakable_object.gd" id="1_p1uvk"]
 [ext_resource type="PackedScene" uid="uid://dgjpbw0nris7n" path="res://objects/components/HealthComponent.tscn" id="2_2pua6"]
 [ext_resource type="PackedScene" uid="uid://davjvuhbb2fib" path="res://objects/components/HitboxComponent.tscn" id="3_5hdlb"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2itfb"]
 
-[sub_resource type="CylinderMesh" id="CylinderMesh_2pua6"]
+[sub_resource type="BoxMesh" id="BoxMesh_2pua6"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pmynu"]
-albedo_color = Color(0.7411765, 0.09019608, 0.09411765, 1)
+albedo_color = Color(0.59908736, 0.37953314, 0.10155419, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_p1uvk"]
 
-[node name="SimpleEnemy" type="CharacterBody3D" unique_id=1931306781 node_paths=PackedStringArray("hitbox", "health")]
-collision_layer = 17
-collision_mask = 17
+[node name="BreakableObject" type="StaticBody3D" unique_id=425857093 node_paths=PackedStringArray("hitbox", "health")]
 script = ExtResource("1_p1uvk")
 hitbox = NodePath("HitboxComponent")
 health = NodePath("HealthComponent")
@@ -30,8 +28,7 @@ health_component = NodePath("../HealthComponent")
 shape = SubResource("BoxShape3D_2itfb")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=505126518]
-transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 1, 0, 0, 0)
-mesh = SubResource("CylinderMesh_2pua6")
+mesh = SubResource("BoxMesh_2pua6")
 surface_material_override/0 = SubResource("StandardMaterial3D_pmynu")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1528076430]
