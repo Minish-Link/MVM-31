@@ -52,7 +52,7 @@ axis_lock_angular_y = true
 axis_lock_angular_z = true
 script = ExtResource("1_wrsal")
 BRAKE_SPEED = 10.0
-JUMP_VELOCITY = 8.0
+JUMP_VELOCITY = 9.0
 MINIMUM_JUMP_TIME = 0.05
 bufferable_inputs = Array[String](["jump", "attack", "slide"])
 
@@ -150,7 +150,7 @@ allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../Ju
 [node name="WallCling" type="Node" parent="StateMachine" unique_id=466986007 node_paths=PackedStringArray("allowed_exit_states")]
 unique_name_in_owner = true
 script = ExtResource("19_4hx4m")
-wall_jump_force = 1.5
+wall_jump_force = 7.0
 allowed_exit_states = [NodePath("../Jump"), NodePath("../Fall"), NodePath("../Idle"), NodePath("../Walk"), NodePath("../BasicAttack"), NodePath("../Death"), NodePath("../Hurt"), NodePath("../VoidOut"), NodePath("../Shoot"), NodePath("../Grapple"), NodePath("../NoClip")]
 
 [node name="HealthComponent" parent="." unique_id=1758599706 instance=ExtResource("5_3n5ai")]

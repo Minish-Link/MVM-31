@@ -83,6 +83,7 @@ func _handle_jump(delta: float):
 		velocity.y = JUMP_VELOCITY
 		jump_timer = MINIMUM_JUMP_TIME
 		state_machine.attempt_force_state_change("Jump")
+		coyote_countdown = 0
 		velocity += %WallCling._get_walljump_velocity()
 	
 	# Handle holding jump to jump higher
