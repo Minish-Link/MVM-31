@@ -14,7 +14,7 @@ func sm_init(parent: CharacterBody3D) -> void:
 			child.parent = parent
 	assert(initial_state, parent.name + " needs an initial state to be set")
 	current_state = initial_state
-	current_state.enter()
+	current_state._enter()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -25,12 +25,16 @@ func _physics_process(delta: float) -> void:
 	if current_state:
 		current_state._physics_update(delta)
 
-func on_child_transition(state, new_state_name):
+func on_child_transition(state: State, new_state_name: String):
 	if state != current_state:
 		return
 	
 	var new_state = states.get(new_state_name.to_lower())
 	if !new_state or new_state_name.to_lower() == state.name.to_lower():
+		return
+	if not new_state.allowed_to_enter:
+		return
+	if new_state_name.to_lower() not in state.allowed_exit_state_names:
 		return
 	
 	if current_state:

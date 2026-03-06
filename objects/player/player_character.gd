@@ -28,8 +28,6 @@ var input_dir := Vector2.ZERO
 # 1 for right, -1 for left
 var facing_dir := 1.0
 
-var can_attack := true
-
 #debug stuff
 var accepting_player_inputs := true
 var noclip_enabled: bool = false:
@@ -45,6 +43,7 @@ func _ready() -> void:
 	
 	health_component = get_node("HealthComponent")
 	health_component.on_damaged.connect(_on_take_damage)
+	health_component.on_health_changed.connect(%HealthBar.update_health)
 	
 	current_walk_speed = WALK_SPEED
 	
@@ -70,7 +69,7 @@ func _physics_process(delta: float) -> void:
 	_handle_horizontal_movement(delta)
 
 func _handle_fall(delta: float):
-	if not is_on_floor():
+	if not is_on_floor() and not state_machine.is_in_state("WallCling"):
 		if coyote_countdown > 0:
 			coyote_countdown -= delta
 		if can_fall:
@@ -83,6 +82,8 @@ func _handle_jump(delta: float):
 	if is_input_buffered("jump") and coyote_countdown > 0 and not %CeilingChecker.is_colliding():
 		velocity.y = JUMP_VELOCITY
 		jump_timer = MINIMUM_JUMP_TIME
+		state_machine.attempt_force_state_change("Jump")
+		velocity += %WallCling._get_walljump_velocity()
 	
 	# Handle holding jump to jump higher
 	jump_timer -= delta
@@ -161,6 +162,9 @@ func _unbuffer_input(input_name: String):
 
 func get_next_move_state() -> String:
 	if not is_on_floor():
+		#if WorldData.has_item("WallCling") and is_on_wall() and input_dir.y > -0.1:
+		if is_on_wall() and input_dir.y < 0.1:
+			return "WallCling"
 		return "fall"
 	elif abs(input_dir.x) > 0.1:
 		return "walk"

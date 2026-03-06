@@ -18,6 +18,7 @@ extends State
 var current_attack: DamageBoxComponent
 
 func _ready() -> void:
+	super._ready()
 	delay_timer.timeout.connect(create_attack)
 	cooldown_timer.timeout.connect(end_cooldown)
 	exit_timer.timeout.connect(end_attack)
@@ -27,8 +28,7 @@ func _enter() -> void:
 	delay_timer.start(ATTACK_DELAY)
 	exit_timer.start(ATTACK_DELAY + ATTACK_DURATION)
 	cooldown_timer.start(ATTACK_COOLDOWN)
-	if parent is Player:
-		parent.can_attack = false
+	allowed_to_enter = false
 
 func _exit() -> void:
 	if current_attack:
@@ -39,8 +39,7 @@ func _exit() -> void:
 
 
 func end_cooldown() -> void:
-	if parent is Player:
-		parent.can_attack = true
+	allowed_to_enter = true
 
 func end_attack() -> void:
 	print("ending attack")

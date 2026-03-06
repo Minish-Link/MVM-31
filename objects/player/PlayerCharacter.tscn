@@ -20,8 +20,10 @@
 [ext_resource type="Script" uid="uid://bwnerw0mo0hjj" path="res://objects/player/states/shoot.gd" id="16_4hx4m"]
 [ext_resource type="Script" uid="uid://dohgs4517tf6h" path="res://objects/player/states/hurt.gd" id="17_kuxqi"]
 [ext_resource type="Script" uid="uid://badexb04ko27r" path="res://objects/player/no_clip.gd" id="18_76nb4"]
+[ext_resource type="Script" uid="uid://7v57p4m1fooc" path="res://objects/player/wall_cling.gd" id="19_4hx4m"]
 [ext_resource type="Script" uid="uid://c7bvm1q0jio3e" path="res://objects/player/player_debug.gd" id="20_11qm3"]
 [ext_resource type="PackedScene" uid="uid://gq4qjmc2vc8a" path="res://levels/testing/test1.tscn" id="22_28773"]
+[ext_resource type="Script" uid="uid://dho580guomf5h" path="res://objects/player/health_bar.gd" id="23_0ajwu"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ski25"]
 radius = 0.45
@@ -36,6 +38,12 @@ material = SubResource("StandardMaterial3D_wrsal")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w8j34"]
 albedo_texture = ExtResource("2_jt3ii")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4hx4m"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h2rju"]
+bg_color = Color(0.75686276, 0, 0, 1)
 
 [node name="PlayerCharacter" type="CharacterBody3D" unique_id=581616715]
 axis_lock_linear_z = true
@@ -75,7 +83,7 @@ allowed_exit_states = [NodePath("../Idle"), NodePath("../Jump"), NodePath("../Sl
 
 [node name="Jump" type="Node" parent="StateMachine" unique_id=321111278 node_paths=PackedStringArray("allowed_exit_states")]
 script = ExtResource("6_uqdnk")
-allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../Fall"), NodePath("../BasicAttack"), NodePath("../Death"), NodePath("../VoidOut"), NodePath("../Grapple"), NodePath("../Shoot"), NodePath("../Hurt"), NodePath("../NoClip")]
+allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../Fall"), NodePath("../BasicAttack"), NodePath("../Death"), NodePath("../VoidOut"), NodePath("../Grapple"), NodePath("../Shoot"), NodePath("../Hurt"), NodePath("../NoClip"), NodePath("../WallCling")]
 
 [node name="Slide" type="Node" parent="StateMachine" unique_id=2011431557 node_paths=PackedStringArray("allowed_exit_states")]
 script = ExtResource("7_jnw1j")
@@ -102,7 +110,7 @@ one_shot = true
 
 [node name="Fall" type="Node" parent="StateMachine" unique_id=805685856 node_paths=PackedStringArray("allowed_exit_states")]
 script = ExtResource("9_uqdnk")
-allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../BasicAttack"), NodePath("../Death"), NodePath("../VoidOut"), NodePath("../Hurt"), NodePath("../Shoot"), NodePath("../Grapple"), NodePath("../NoClip")]
+allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../BasicAttack"), NodePath("../Death"), NodePath("../VoidOut"), NodePath("../Hurt"), NodePath("../Shoot"), NodePath("../Grapple"), NodePath("../NoClip"), NodePath("../WallCling"), NodePath("../Jump")]
 
 [node name="Death" type="Node" parent="StateMachine" unique_id=1851708392]
 script = ExtResource("10_ceup0")
@@ -139,6 +147,12 @@ allowed_exit_states = [NodePath("../NoClip"), NodePath("../Idle"), NodePath("../
 script = ExtResource("18_76nb4")
 allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../Jump"), NodePath("../Fall"), NodePath("../Death"), NodePath("../Hurt"), NodePath("../VoidOut")]
 
+[node name="WallCling" type="Node" parent="StateMachine" unique_id=466986007 node_paths=PackedStringArray("allowed_exit_states")]
+unique_name_in_owner = true
+script = ExtResource("19_4hx4m")
+wall_jump_force = 1.5
+allowed_exit_states = [NodePath("../Jump"), NodePath("../Fall"), NodePath("../Idle"), NodePath("../Walk"), NodePath("../BasicAttack"), NodePath("../Death"), NodePath("../Hurt"), NodePath("../VoidOut"), NodePath("../Shoot"), NodePath("../Grapple"), NodePath("../NoClip")]
+
 [node name="HealthComponent" parent="." unique_id=1758599706 instance=ExtResource("5_3n5ai")]
 
 [node name="HitboxComponent" parent="." unique_id=1077715365 node_paths=PackedStringArray("health_component") instance=ExtResource("6_bckj6")]
@@ -163,6 +177,23 @@ grow_horizontal = 2
 grow_vertical = 0
 size_flags_vertical = 8
 placeholder_text = "enter commands here!"
+
+[node name="UI" type="Node" parent="." unique_id=2040368169]
+
+[node name="HUD" type="CanvasLayer" parent="UI" unique_id=876480484]
+
+[node name="HealthBar" type="ProgressBar" parent="UI/HUD" unique_id=1513687534]
+unique_name_in_owner = true
+offset_left = 39.0
+offset_top = 30.0
+offset_right = 277.0
+offset_bottom = 53.0
+mouse_filter = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_4hx4m")
+theme_override_styles/fill = SubResource("StyleBoxFlat_h2rju")
+step = 0.1
+value = 100.0
+script = ExtResource("23_0ajwu")
 
 [connection signal="editing_toggled" from="Debug/CommandLine" to="Debug" method="_on_command_line_editing_toggled"]
 [connection signal="text_submitted" from="Debug/CommandLine" to="Debug" method="_on_line_edit_text_submitted"]

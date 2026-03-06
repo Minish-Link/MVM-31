@@ -1,6 +1,6 @@
 extends State
 
-func enter() -> void:
+func _enter() -> void:
 	print("entering idle state")
 	if parent is Player:
 		parent.current_walk_speed = parent.WALK_SPEED

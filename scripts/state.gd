@@ -11,9 +11,13 @@ var parent: CharacterBody3D
 @export var allowed_exit_states: Array[State] = []
 var allowed_exit_state_names: Array[String] = []
 
+var allowed_to_enter := true
+
 func _ready() -> void:
+	print("State: %s with exits:" % name)
 	for _state in allowed_exit_states:
 		allowed_exit_state_names.append(_state.name.to_lower())
+		#print(_state.name.to_lower())
 
 ## This is called each time this state is entered from a different state
 func _enter() -> void:

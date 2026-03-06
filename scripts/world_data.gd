@@ -26,6 +26,8 @@ func spend_money(cost: int) -> bool:
 	return true
 
 func has_item(item_name: String) -> bool:
+	# TODO remove this return when testing item pickups
+	return true
 	if item_name.to_lower() not in collected_items.keys():
 		return false
 	return collected_items[item_name.to_lower()] > 0
