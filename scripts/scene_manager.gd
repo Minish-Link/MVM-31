@@ -51,6 +51,9 @@ func _load_room_from_scene(packed_scene: PackedScene) -> void:
 	get_tree().change_scene_to_packed(packed_scene)
 
 func _load_room_from_path_string(room_path: String) -> void:
+	if not ResourceLoader.exists(room_path, "PackedScene"):
+		push_error("Attempted to load %s, but it does not exist" % room_path)
+		return
 	get_tree().change_scene_to_file(room_path)
 
 func start_load_room_from_scene(packed_scene: PackedScene) -> void:

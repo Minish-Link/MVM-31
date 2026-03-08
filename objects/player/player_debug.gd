@@ -9,6 +9,7 @@ var functions := {
 	"give": _give_item,
 	"reset": _reset_level_command,
 	"noclip": _toggle_noclip,
+	"load_level": _load_level,
 }
 
 func _ready() -> void:
@@ -63,3 +64,7 @@ func _give_item(arg: String = "") -> void:
 
 func _toggle_noclip(_args: String = "") -> void:
 	PlayerCharacter.noclip_enabled = not PlayerCharacter.noclip_enabled
+
+func _load_level(arg: String = "") -> void:
+	SceneManager.stored_entrance_id = 0
+	SceneManager.start_load_room_from_path_string("res://levels/%s.tscn" % arg)
