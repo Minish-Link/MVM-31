@@ -45,8 +45,6 @@ grid_snap_size = 0.5
 environment = SubResource("Environment_m2onx")
 
 [node name="CameraBoundary" parent="." unique_id=1830535311 instance=ExtResource("3_aklg6")]
-left_boundary = -8.0
-right_boundary = 32.0
 
 [node name="Terrain" type="Node3D" parent="." unique_id=2003721097]
 

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://y3ndwdtybmgm"]
+
+[ext_resource type="PackedScene" uid="uid://dtss5emglurnd" path="res://levels/RoomTemplate.tscn" id="1_2wrog"]
+
+[node name="Room" unique_id=441597396 instance=ExtResource("1_2wrog")]
+
+[node name="RoomData" parent="." index="0" unique_id=1310900475]
+room_name = "Interface Test"
+region = 2
+
+[node name="Backgrounds" parent="." index="9" unique_id=1929158334]
+visible = false
+
+[editable path="RoomData"]
