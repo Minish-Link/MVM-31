@@ -52,22 +52,35 @@ axis_lock_angular_y = true
 axis_lock_angular_z = true
 script = ExtResource("1_wrsal")
 BRAKE_SPEED = 10.0
-JUMP_VELOCITY = 9.0
+JUMP_VELOCITY = 13.0
 MINIMUM_JUMP_TIME = 0.05
 bufferable_inputs = Array[String](["jump", "attack", "slide"])
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=588400986]
 unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
 shape = SubResource("CapsuleShape3D_ski25")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=327672567]
 unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
 mesh = SubResource("CapsuleMesh_ski25")
 surface_material_override/0 = SubResource("StandardMaterial3D_w8j34")
 
 [node name="CeilingChecker" type="RayCast3D" parent="." unique_id=358146036]
 unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 target_position = Vector3(0, 1, 0)
+
+[node name="RightWallChecker" type="RayCast3D" parent="." unique_id=389045869]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+target_position = Vector3(0.5, 0, 0)
+
+[node name="LeftWallChecker" type="RayCast3D" parent="." unique_id=1537127294]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+target_position = Vector3(-0.5, 0, 0)
 
 [node name="StateMachine" type="Node" parent="." unique_id=1300399073 node_paths=PackedStringArray("initial_state")]
 script = ExtResource("3_w8j34")
@@ -151,11 +164,13 @@ allowed_exit_states = [NodePath("../Idle"), NodePath("../Walk"), NodePath("../Ju
 unique_name_in_owner = true
 script = ExtResource("19_4hx4m")
 wall_jump_force = 10.0
+CLING_FALL_DELAY = 0.05
 allowed_exit_states = [NodePath("../Jump"), NodePath("../Fall"), NodePath("../Idle"), NodePath("../Walk"), NodePath("../BasicAttack"), NodePath("../Death"), NodePath("../Hurt"), NodePath("../VoidOut"), NodePath("../Shoot"), NodePath("../Grapple"), NodePath("../NoClip")]
 
 [node name="HealthComponent" parent="." unique_id=1758599706 instance=ExtResource("5_3n5ai")]
 
 [node name="HitboxComponent" parent="." unique_id=1077715365 node_paths=PackedStringArray("health_component") instance=ExtResource("6_bckj6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 health_component = NodePath("../HealthComponent")
 
 [node name="WeaponOffset" type="Node3D" parent="." unique_id=1397970258]

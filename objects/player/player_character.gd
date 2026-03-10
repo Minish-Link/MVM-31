@@ -13,6 +13,7 @@ var current_walk_speed := 5.0
 @export var MINIMUM_JUMP_TIME := 0.5
 @export var JUMP_BRAKE_SPEED := 20.0
 var jump_timer := 0.0
+@export var gravity_multiplier := 2.0
 
 @export_category("Sauce")
 @export var COYOTE_TIME := 0.2
@@ -27,6 +28,8 @@ var can_fall := true
 var input_dir := Vector2.ZERO
 # 1 for right, -1 for left
 var facing_dir := 1.0
+
+var wall_direction := 0.0
 
 #debug stuff
 var accepting_player_inputs := true
@@ -73,7 +76,7 @@ func _handle_fall(delta: float):
 		if coyote_countdown > 0:
 			coyote_countdown -= delta
 		if can_fall:
-			velocity += get_gravity() * delta
+				velocity += get_gravity() * delta * gravity_multiplier
 	else:
 		coyote_countdown = COYOTE_TIME
 
@@ -163,8 +166,11 @@ func _unbuffer_input(input_name: String):
 
 func get_next_move_state() -> String:
 	if not is_on_floor():
-		#if WorldData.has_item("WallCling") and is_on_wall() and input_dir.y > -0.1:
-		if is_on_wall() and input_dir.y < 0.1:
+		if %RightWallChecker.is_colliding():
+			wall_direction = 1.0
+			return "WallCling"
+		elif %LeftWallChecker.is_colliding():
+			wall_direction = -1.0
 			return "WallCling"
 		return "fall"
 	elif abs(input_dir.x) > 0.1:

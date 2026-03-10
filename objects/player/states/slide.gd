@@ -19,8 +19,10 @@ func _enter() -> void:
 		current_slide_speed = max(INITIAL_SLIDE_SPEED, parent.current_walk_speed)
 	slide_countdown = SLIDE_MINIMUM_TIME
 	# squish the player's collision and hitbox
-	parent.position.y -= 0.5
+	#parent.position.y -= 0.5
+	var prev_height = %CollisionShape3D.shape.height
 	%CollisionShape3D.shape.height *= 0.5
+	parent.position.y -= (prev_height - %CollisionShape3D.shape.height) / 2.0
 	%MeshInstance3D.mesh.height *= 0.5
 
 func _exit() -> void:
@@ -28,7 +30,9 @@ func _exit() -> void:
 		parent.horizontal_input_allowed = true
 		parent.current_walk_speed = current_slide_speed
 	# unsquish the player's collision and hitbox
+	var prev_height = %CollisionShape3D.shape.height
 	%CollisionShape3D.shape.height *= 2.0
+	parent.position.y -= (prev_height - %CollisionShape3D.shape.height) / 2.0
 	%MeshInstance3D.mesh.height *= 2.0
 
 func _physics_update(delta: float) -> void:

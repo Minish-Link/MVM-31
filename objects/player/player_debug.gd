@@ -35,7 +35,11 @@ func _on_line_edit_text_submitted(new_text: String) -> void:
 		
 	functions[command].call(arguments)
 	command_line.clear()
-	
+
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("no_clip"):
+		_toggle_noclip()
+
 func _on_command_line_editing_toggled(toggled_on: bool) -> void:
 	PlayerCharacter.accepting_player_inputs = not toggled_on
 

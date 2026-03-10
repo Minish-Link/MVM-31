@@ -72,6 +72,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_atod5")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=380135768]
 transform = Transform3D(0.9659259, 0.066987336, 0.25000003, -0.12940954, -0.7115162, 0.69065034, 0.22414389, -0.69946927, -0.6786031, 0, 0, -11.275092)
+light_color = Color(1, 0.7058824, 0.5137255, 1)
 shadow_enabled = true
 
 [editable path="RoomData"]

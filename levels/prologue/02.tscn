@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://cbif2dtb1tpn0"]
+
+[ext_resource type="PackedScene" uid="uid://dtss5emglurnd" path="res://levels/RoomTemplate.tscn" id="1_uot7p"]
+[ext_resource type="PackedScene" uid="uid://24q3kdv1yw2u" path="res://objects/environment/building_blocks/WhiteBlock.tscn" id="2_s4y51"]
+
+[node name="Room" unique_id=441597396 instance=ExtResource("1_uot7p")]
+
+[node name="Block" parent="Platforms" parent_id_path=PackedInt32Array(557602217) index="0" unique_id=789436918]
+transform = Transform3D(5, 0, 0, 0, 15, 0, 0, 0, 1, -11, -10, 0)
+
+[node name="Block5" parent="Platforms" parent_id_path=PackedInt32Array(557602217) index="1" unique_id=202502612 instance=ExtResource("2_s4y51")]
+transform = Transform3D(9, 0, 0, 0, 7, 0, 0, 0, 1, -9, -24, 0)
+
+[node name="Block3" parent="Platforms" parent_id_path=PackedInt32Array(557602217) index="2" unique_id=408163196 instance=ExtResource("2_s4y51")]
+transform = Transform3D(4.9999995, 0, 0, 0, 1, 0, 0, 0, 1, 11, 33, 0)
+
+[node name="Block4" parent="Platforms" parent_id_path=PackedInt32Array(557602217) index="3" unique_id=1277066719 instance=ExtResource("2_s4y51")]
+transform = Transform3D(4.9999995, 0, 0, 0, 1, 0, 0, 0, 1, 11, 29, 0)
+
+[node name="Block2" parent="Platforms" parent_id_path=PackedInt32Array(557602217) index="4" unique_id=1390373541 instance=ExtResource("2_s4y51")]
+transform = Transform3D(4, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, 1, 0)
+
+[node name="CameraBoundary" parent="." index="7" unique_id=1830535311]
+MAP_TOP = 2
+MAP_BOTTOM = -1
+bottom_boundary = -24.0
+top_boundary = 40.0
+
+[node name="Backgrounds" parent="." index="9" unique_id=1929158334]
+visible = false
+
+[node name="Background" parent="Backgrounds" index="2" unique_id=682129042]
+visible = false
+
+[editable path="RoomData"]

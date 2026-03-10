@@ -10,8 +10,10 @@ var right_offset := 0.0
 var top_offset := 0.0
 var bottom_offset := 0.0
 
+@export var distance_from_player := 10.0
+
 func _ready() -> void:
-	position.z = 8.0
+	position.z = distance_from_player
 	position.x = PlayerCharacter.position.x
 	position.y = PlayerCharacter.position.y
 	set_camera_boundaries()

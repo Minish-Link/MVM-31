@@ -21,8 +21,11 @@ cursor_step_size = 0.5
 room_name = "Test2"
 region = 1
 
-[node name="RoomEntrance2" parent="RoomData" index="1" unique_id=763430562 instance=ExtResource("2_xctff")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 3, 0)
+[node name="RoomEntrance" parent="RoomData" index="0" unique_id=763430562]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5, 0)
+
+[node name="RoomEntrance2" parent="RoomData" index="1" unique_id=1513020598 instance=ExtResource("2_xctff")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 1.5, 0)
 door_id = 1
 
 [node name="RoomExit" parent="RoomData" index="2" unique_id=1370284479 instance=ExtResource("3_i4oay")]

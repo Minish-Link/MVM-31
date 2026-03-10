@@ -14,7 +14,7 @@ var allowed_exit_state_names: Array[String] = []
 var allowed_to_enter := true
 
 func _ready() -> void:
-	print("State: %s with exits:" % name)
+	print("State %s ready" % name)
 	for _state in allowed_exit_states:
 		allowed_exit_state_names.append(_state.name.to_lower())
 		#print(_state.name.to_lower())
